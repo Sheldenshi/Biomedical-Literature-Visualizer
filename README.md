@@ -1,5 +1,8 @@
 # Visualization_Analyzation_Tool_for_Biomedical_Researchers
-
+## Contribution:
+* Shelden Shi
+* Tony Wurt
+* Isabella Lee-Rubio
 ### Installation and setup
 
 This repository requires Python 3.6 (other versions where not tested).
