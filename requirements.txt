@@ -1,0 +1,7 @@
+jupyter==1.0.0
+kaggle==1.5.8
+sentence-splitter==1.4
+stanza==1.1.1
+tqdm==4.50.2
+git+https://github.com/matze-dd/YaLafi.git@master
+git+https://github.com/boisgera/pandoc.git
