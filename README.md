@@ -1,5 +1,5 @@
 # Visualization_Analyzation_Tool_for_Biomedical_Researchers
-## Contribution:
+## Contributors:
 * Shelden Shi
 * Tony Wurt
 * Isabella Lee-Rubio
