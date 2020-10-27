@@ -7,7 +7,7 @@ import time
 
 uri = "bolt://localhost:7687"
 user = "neo4j"
-password = "your password"
+password = "X7ZWbpV{7j}T]b"
 
 g = Graph(uri=uri, user=user, password=password)
 
@@ -20,27 +20,20 @@ tx = g.begin()
 
 input_path = (
      Path.cwd()
-     /"output"
+     /"../output"
 )
 
 paths = list(input_path.glob('*.json'))
 
-hashmap_file = open('hashmap.json')
+hashmap_file = open('../hashmap.json')
+#hashmap_file = open('hashmap.json')
 hashmap = json.load(hashmap_file)
 
-def add_nodes(word_lable_pairs, label_to_graph):
-	counter = 0
-	for key, value in word_lable_pairs.items():
-		if value == label_to_graph:
-			tx.create(Node(value, name=key))
-			counter += 1
-		if counter == 500:
-			#tx.commit()
-			#print("Commit {} nodes".format(counter))
-			#time.sleep(5)
-			counter = 0
-	#tx.commit()
-	#time.sleep(2)
+def add_nodes(word_label_paper_map, label_to_graph):
+	
+	for word, pairs in word_label_paper_map.items():
+		if pairs[0] == label_to_graph:
+			tx.create(Node(pairs[0], name=word, paper_id=pairs[1]))
 
 
 def add_to_graph():
@@ -63,30 +56,32 @@ def add_relations(word_word_pairs):
 
 
 
-def graph_label(label_to_graph):
-	add_nodes(hashmap, label_to_graph)
+def graph_label(labels_to_graph):
+	for label in labels_to_graph:
+		add_nodes(hashmap, label)
 
 	for file in paths:
-		print("Connecting {}".format(file))
-		all_pairs = []
-		seen = set()
-		data = json.load(open(file))
-		for paper in list(data.values()):
-			for sentence in paper:
-				entities = []
-				for i in range(len(sentence[1])):
-					entity = sentence[1][i][0]
-					label = sentence[1][i][1]
-					if label_to_graph == label and entity not in seen:
-						seen.add(entity)
-						entities.append(entity)
-					
-					
-				#entities = [i[0] for i in sentence[1]]
+		for label in labels_to_graph:
+			print(f"Connecting {label} in {file}")
+			all_pairs = []
+			seen = set()
+			data = json.load(open(file))
+			for paper_id, paper in data.items():
+				for sentence in paper:
+					entities = []
+					for i in range(len(sentence[1])):
+						entity = sentence[1][i][0]
+						pair_label = sentence[1][i][1]
+						if label == pair_label and entity not in seen:
+							seen.add(entity)
+							entities.append(entity)
+						
+						
+					#entities = [i[0] for i in sentence[1]]
 
-				all_pairs.extend(list(combinations(entities, 2)))
-		add_relations(all_pairs)
+					all_pairs.extend(list(combinations(entities, 2)))
+			add_relations(all_pairs)
 	tx.commit()
 
 
-graph_label("DNA")
+graph_label(["DNA", "DISEASE", "ORGANISM", "PROBLEM"])
