@@ -7,7 +7,7 @@ import time
 
 uri = "bolt://localhost:7687"
 user = "neo4j"
-password = "X7ZWbpV{7j}T]b"
+password = "your password"
 
 g = Graph(uri=uri, user=user, password=password)
 
