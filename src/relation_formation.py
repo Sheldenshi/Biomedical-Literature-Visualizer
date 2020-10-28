@@ -5,9 +5,9 @@ from itertools import combinations
 from pathlib import Path
 import time
 
-uri = "bolt://localhost:7687"
+uri = "neo4j://localhost:7687"
 user = "neo4j"
-password = "your password"
+password = "calhack"
 
 g = Graph(uri=uri, user=user, password=password)
 
@@ -26,9 +26,10 @@ input_path = (
 paths = list(input_path.glob('*.json'))
 
 hashmap_file = open('../hashmap.json')
+print("open json")
 #hashmap_file = open('hashmap.json')
 hashmap = json.load(hashmap_file)
-
+print("load json")
 def add_nodes(word_label_paper_map, label_to_graph):
 	
 	for word, pairs in word_label_paper_map.items():
@@ -58,7 +59,12 @@ def add_relations(word_word_pairs):
 
 def graph_label(labels_to_graph):
 	for label in labels_to_graph:
-		add_nodes(hashmap, label)
+		
+		if label != "DNA":
+			print(f'Adding label: {label}')
+			add_nodes(hashmap, label)
+
+		
 
 	for file in paths:
 		for label in labels_to_graph:
