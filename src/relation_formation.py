@@ -5,11 +5,12 @@ from itertools import combinations
 from pathlib import Path
 import time
 
-uri = "neo4j://localhost:7687"
+#uri = "neo4j://localhost:7687"
+uri = "bolt://10.0.1.4:7687"
 user = "neo4j"
 password = "calhack"
 
-g = Graph(uri=uri, user=user, password=password)
+g = Graph(uri, user=user, password=password)
 
 # optionally clear the graph
 g.delete_all()
@@ -60,9 +61,9 @@ def add_relations(word_word_pairs):
 def graph_label(labels_to_graph):
 	for label in labels_to_graph:
 		
-		if label != "DNA":
-			print(f'Adding label: {label}')
-			add_nodes(hashmap, label)
+		
+		print(f'Adding label: {label}')
+		add_nodes(hashmap, label)
 
 		
 
