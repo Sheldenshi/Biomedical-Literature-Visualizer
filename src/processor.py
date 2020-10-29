@@ -5,12 +5,12 @@ from pathlib import Path
 input_path = (
      Path.cwd()
      /".."
-     /"output"
+     /"test"
 )
 
 paths = list(input_path.glob('*.json'))
 print(paths)
-output_file = open('../hashmap.json', 'w')
+output_file = open('../test/testmap.json', 'w')
 labels = {}
 
 for file in paths:
