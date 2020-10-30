@@ -13,7 +13,7 @@ password = "X7ZWbpV{7j}T]b"
 g = Graph(uri, user=user, password=password)
 
 # optionally clear the graph
-g.delete_all()
+#g.delete_all()
 
 # begin a transaction
 tx = g.begin()
