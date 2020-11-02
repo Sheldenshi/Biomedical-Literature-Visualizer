@@ -4,11 +4,12 @@ from py2neo import Graph, Node, Relationship
 from itertools import combinations 
 from pathlib import Path
 import time
+import pickle
 
 #uri = "neo4j://localhost:7687"
 uri = "bolt://10.0.1.4:7687"
 user = "neo4j"
-password = "X7ZWbpV{7j}T]b"
+password = "your password"
 
 g = Graph(uri, user=user, password=password)
 
@@ -27,6 +28,8 @@ input_path = (
 paths = list(input_path.glob('*.json'))
 
 hashmap_file = open('../hashmap.json')
+done_file = open('../done.pickle', 'wb')
+
 print("open json")
 #hashmap_file = open('hashmap.json')
 hashmap = json.load(hashmap_file)

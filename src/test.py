@@ -6,8 +6,9 @@ from pathlib import Path
 import time
 
 uri = "neo4j+s://40.88.128.84:7687"
+# bolt://10.0.1.4:7687
 user = "neo4j"
-password = "X7ZWbpV{7j}T]b"
+password = "your password"
 
 g = Graph(user=user, password=password)
 
@@ -71,29 +72,28 @@ def graph_label(labels_to_graph):
 		
 
 	for file in paths:
-		for label in labels_to_graph:
-			print(f"Connecting {label} in {file}")
-			all_pairs = []
-			seen = set()
-			data = json.load(open(file))
-			for paper_id, paper in data.items():
-				for sentence in paper:
-					entities = []
-					for i in range(len(sentence[1])):
-						entity = sentence[1][i][0]	
-						if len(sentence[1][i]) > 2:
-							pair_label = sentence[1][i][1]
-						else:
-							pair_label = ""
-						if label == pair_label and entity not in seen:
-							seen.add(entity)
-							entities.append(entity)
+		print(f"Connecting {label} in {file}")
+		all_pairs = []
+		seen = set()
+		data = json.load(open(file))
+		for paper_id, paper in data.items():
+			for sentence in paper:
+				entities = []
+				for i in range(len(sentence[1])):
+					entity = sentence[1][i][0]	
+					if len(sentence[1][i]) > 2:
+						pair_label = sentence[1][i][1]
+					else:
+						pair_label = ""
+					if pair_label in labels_to_graph and entity not in seen:
+						seen.add(entity)
+						entities.append(entity)
 						
 						
 					#entities = [i[0] for i in sentence[1]]
 
-					all_pairs.extend(list(combinations(entities, 2)))
-			add_relations(all_pairs)
+				all_pairs.extend(list(combinations(entities, 2)))
+		add_relations(all_pairs)
 	tx.commit()
 
 

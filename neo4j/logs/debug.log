@@ -1,0 +1,996 @@
+2020-10-20 21:03:42.599+0000 WARN [o.n.k.i.JvmChecker] The dbms.memory.heap.max_size setting has not been configured. It is recommended that this setting is always explicitly configured, to ensure the system has a balanced configuration. Until then, a JVM computed heuristic of 4294967296 bytes is used instead. Run `neo4j-admin memrec` for memory configuration suggestions.
+2020-10-20 21:03:42.600+0000 WARN [o.n.k.i.JvmChecker] The dbms.memory.heap.initial_size setting has not been configured. It is recommended that this setting is always explicitly configured, to ensure the system has a balanced configuration. Until then, a JVM computed heuristic of 268435456 bytes is used instead. Run `neo4j-admin memrec` for memory configuration suggestions.
+2020-10-20 21:03:42.689+0000 WARN [o.n.i.p.PageCache] The dbms.memory.pagecache.size setting has not been configured. It is recommended that this setting is always explicitly configured, to ensure the system has a balanced configuration. Until then, a computed heuristic value of 6442450944 bytes will be used instead. Run `neo4j-admin memrec` for memory configuration suggestions.
+2020-10-20 21:03:42.827+0000 INFO [o.n.i.d.DiagnosticsManager] ********************************************************************************
+2020-10-20 21:03:42.828+0000 INFO [o.n.i.d.DiagnosticsManager]                              [ System diagnostics ]                             
+2020-10-20 21:03:42.828+0000 INFO [o.n.i.d.DiagnosticsManager] ********************************************************************************
+2020-10-20 21:03:42.831+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:42.831+0000 INFO [o.n.i.d.DiagnosticsManager]                          [ System memory information ]                          
+2020-10-20 21:03:42.831+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:42.832+0000 INFO [o.n.i.d.DiagnosticsManager] Total Physical memory: 16.00GiB
+2020-10-20 21:03:42.832+0000 INFO [o.n.i.d.DiagnosticsManager] Free Physical memory: 89.73MiB
+2020-10-20 21:03:42.832+0000 INFO [o.n.i.d.DiagnosticsManager] Committed virtual memory: 9.886GiB
+2020-10-20 21:03:42.833+0000 INFO [o.n.i.d.DiagnosticsManager] Total swap space: 13.00GiB
+2020-10-20 21:03:42.833+0000 INFO [o.n.i.d.DiagnosticsManager] Free swap space: 1.037GiB
+2020-10-20 21:03:42.833+0000 INFO [o.n.i.d.DiagnosticsManager] 
+2020-10-20 21:03:42.833+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:42.834+0000 INFO [o.n.i.d.DiagnosticsManager]                            [ JVM memory information ]                           
+2020-10-20 21:03:42.834+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:42.834+0000 INFO [o.n.i.d.DiagnosticsManager] Free  memory: 240.7MiB
+2020-10-20 21:03:42.834+0000 INFO [o.n.i.d.DiagnosticsManager] Total memory: 256.0MiB
+2020-10-20 21:03:42.835+0000 INFO [o.n.i.d.DiagnosticsManager] Max   memory: 4.000GiB
+2020-10-20 21:03:42.839+0000 INFO [o.n.i.d.DiagnosticsManager] Garbage Collector: G1 Young Generation: [G1 Eden Space, G1 Survivor Space, G1 Old Gen]
+2020-10-20 21:03:42.839+0000 INFO [o.n.i.d.DiagnosticsManager] Garbage Collector: G1 Old Generation: [G1 Eden Space, G1 Survivor Space, G1 Old Gen]
+2020-10-20 21:03:42.842+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: CodeHeap 'non-nmethods' (Non-heap memory): committed=2.438MiB, used=1.137MiB, max=7.242MiB, threshold=0B
+2020-10-20 21:03:42.843+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: Metaspace (Non-heap memory): committed=21.38MiB, used=20.57MiB, max=-1B, threshold=0B
+2020-10-20 21:03:42.843+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: CodeHeap 'profiled nmethods' (Non-heap memory): committed=4.188MiB, used=4.146MiB, max=116.4MiB, threshold=0B
+2020-10-20 21:03:42.843+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: Compressed Class Space (Non-heap memory): committed=2.375MiB, used=2.046MiB, max=1024MiB, threshold=0B
+2020-10-20 21:03:42.844+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: G1 Eden Space (Heap memory): committed=53.00MiB, used=3.000MiB, max=-1B, threshold=?
+2020-10-20 21:03:42.844+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: G1 Old Gen (Heap memory): committed=194.0MiB, used=2.322MiB, max=4.000GiB, threshold=0B
+2020-10-20 21:03:42.844+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: G1 Survivor Space (Heap memory): committed=9.000MiB, used=9.000MiB, max=-1B, threshold=?
+2020-10-20 21:03:42.844+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: CodeHeap 'non-profiled nmethods' (Non-heap memory): committed=2.438MiB, used=852.8KiB, max=116.4MiB, threshold=0B
+2020-10-20 21:03:42.845+0000 INFO [o.n.i.d.DiagnosticsManager] 
+2020-10-20 21:03:42.845+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:42.845+0000 INFO [o.n.i.d.DiagnosticsManager]                         [ Operating system information ]                        
+2020-10-20 21:03:42.845+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:42.846+0000 INFO [o.n.i.d.DiagnosticsManager] Operating System: Mac OS X; version: 10.15.6; arch: x86_64; cpus: 16
+2020-10-20 21:03:42.848+0000 INFO [o.n.i.d.DiagnosticsManager] Max number of file descriptors: 10240
+2020-10-20 21:03:42.848+0000 INFO [o.n.i.d.DiagnosticsManager] Number of open file descriptors: 158
+2020-10-20 21:03:42.996+0000 INFO [o.n.i.d.DiagnosticsManager] Process id: 91404@SheldendeMacBook-Pro.local
+2020-10-20 21:03:42.997+0000 INFO [o.n.i.d.DiagnosticsManager] Byte order: LITTLE_ENDIAN
+2020-10-20 21:03:42.997+0000 INFO [o.n.i.d.DiagnosticsManager] Local timezone: America/Los_Angeles
+2020-10-20 21:03:42.998+0000 INFO [o.n.i.d.DiagnosticsManager] 
+2020-10-20 21:03:42.998+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:42.998+0000 INFO [o.n.i.d.DiagnosticsManager]                               [ JVM information ]                               
+2020-10-20 21:03:42.998+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:42.998+0000 INFO [o.n.i.d.DiagnosticsManager] VM Name: OpenJDK 64-Bit Server VM
+2020-10-20 21:03:42.999+0000 INFO [o.n.i.d.DiagnosticsManager] VM Vendor: Oracle Corporation
+2020-10-20 21:03:42.999+0000 INFO [o.n.i.d.DiagnosticsManager] VM Version: 11.0.2+9
+2020-10-20 21:03:42.999+0000 INFO [o.n.i.d.DiagnosticsManager] JIT compiler: HotSpot 64-Bit Tiered Compilers
+2020-10-20 21:03:43.000+0000 INFO [o.n.i.d.DiagnosticsManager] VM Arguments: [-XX:+UseG1GC, -XX:-OmitStackTraceInFastThrow, -XX:+AlwaysPreTouch, -XX:+UnlockExperimentalVMOptions, -XX:+TrustFinalNonStaticFields, -XX:+DisableExplicitGC, -XX:MaxInlineLevel=15, -Djdk.nio.maxCachedBufferSize=262144, -Dio.netty.tryReflectionSetAccessible=true, -Djdk.tls.ephemeralDHKeySize=2048, -Djdk.tls.rejectClientInitiatedRenegotiation=true, -XX:FlightRecorderOptions=stackdepth=256, -XX:+UnlockDiagnosticVMOptions, -XX:+DebugNonSafepoints, -Dfile.encoding=UTF-8]
+2020-10-20 21:03:43.000+0000 INFO [o.n.i.d.DiagnosticsManager] 
+2020-10-20 21:03:43.000+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:43.000+0000 INFO [o.n.i.d.DiagnosticsManager]                                [ Java classpath ]                               
+2020-10-20 21:03:43.000+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:43.017+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/zstd-jni-1.4.4-11.jar
+2020-10-20 21:03:43.017+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-browser-4.1.2.jar
+2020-10-20 21:03:43.018+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/parboiled-core-1.2.0.jar
+2020-10-20 21:03:43.018+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jamm-0.3.3.jar
+2020-10-20 21:03:43.018+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-fabric-4.1.3.jar
+2020-10-20 21:03:43.018+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/lucene-backward-codecs-8.5.1.jar
+2020-10-20 21:03:43.018+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jetty-xml-9.4.26.v20200117.jar
+2020-10-20 21:03:43.018+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/lucene-analyzers-common-8.5.1.jar
+2020-10-20 21:03:43.018+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/conf
+2020-10-20 21:03:43.018+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jProcesses-1.6.5.jar
+2020-10-20 21:03:43.018+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-command-line-4.1.3.jar
+2020-10-20 21:03:43.018+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jersey-container-servlet-core-2.30.1.jar
+2020-10-20 21:03:43.018+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/activation-1.1.1.jar
+2020-10-20 21:03:43.019+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-layout-4.1.3.jar
+2020-10-20 21:03:43.019+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/javax.servlet-api-3.1.0.jar
+2020-10-20 21:03:43.019+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/shiro-config-ogdl-1.6.0.jar
+2020-10-20 21:03:43.019+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jetty-http-9.4.26.v20200117.jar
+2020-10-20 21:03:43.019+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-import-tool-4.1.3.jar
+2020-10-20 21:03:43.019+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jackson-jaxrs-json-provider-2.11.0.jar
+2020-10-20 21:03:43.019+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-token-api-4.1.3.jar
+2020-10-20 21:03:43.019+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jetty-servlet-9.4.26.v20200117.jar
+2020-10-20 21:03:43.019+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-cypher-planner-4.1.3.jar
+2020-10-20 21:03:43.019+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/commons-collections-3.2.2.jar
+2020-10-20 21:03:43.019+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-exceptions-4.1.3.jar
+2020-10-20 21:03:43.020+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/shiro-crypto-core-1.6.0.jar
+2020-10-20 21:03:43.020+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-cypher-expression-evaluator-4.1.3.jar
+2020-10-20 21:03:43.020+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/istack-commons-runtime-3.0.8.jar
+2020-10-20 21:03:43.020+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jaxb-runtime-2.3.2.jar
+2020-10-20 21:03:43.020+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-data-collector-4.1.3.jar
+2020-10-20 21:03:43.020+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-expressions-4.1.3.jar
+2020-10-20 21:03:43.020+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jetty-webapp-9.4.26.v20200117.jar
+2020-10-20 21:03:43.020+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jetty-server-9.4.26.v20200117.jar
+2020-10-20 21:03:43.020+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/commons-compress-1.20.jar
+2020-10-20 21:03:43.020+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jPowerShell-3.0.jar
+2020-10-20 21:03:43.021+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-kernel-api-4.1.3.jar
+2020-10-20 21:03:43.021+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/parboiled-scala_2.12-1.2.0.jar
+2020-10-20 21:03:43.021+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-id-generator-4.1.3.jar
+2020-10-20 21:03:43.021+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jackson-jaxrs-base-2.11.0.jar
+2020-10-20 21:03:43.021+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/bcpkix-jdk15on-1.65.jar
+2020-10-20 21:03:43.021+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jersey-common-2.30.1.jar
+2020-10-20 21:03:43.021+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jakarta.ws.rs-api-2.1.6.jar
+2020-10-20 21:03:43.021+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/stax-ex-1.8.1.jar
+2020-10-20 21:03:43.021+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-server-4.1.3.jar
+2020-10-20 21:03:43.021+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-csv-4.1.3.jar
+2020-10-20 21:03:43.022+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/shiro-core-1.6.0.jar
+2020-10-20 21:03:43.022+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-util-4.1.3.jar
+2020-10-20 21:03:43.022+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jetty-security-9.4.26.v20200117.jar
+2020-10-20 21:03:43.022+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/javassist-3.25.0-GA.jar
+2020-10-20 21:03:43.022+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jackson-core-2.11.0.jar
+2020-10-20 21:03:43.022+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/shiro-config-core-1.6.0.jar
+2020-10-20 21:03:43.022+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-dbms-4.1.3.jar
+2020-10-20 21:03:43.022+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-index-4.1.3.jar
+2020-10-20 21:03:43.022+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/picocli-4.2.0.jar
+2020-10-20 21:03:43.022+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/netty-all-4.1.48.Final.jar
+2020-10-20 21:03:43.022+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-io-4.1.3.jar
+2020-10-20 21:03:43.023+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-schema-4.1.3.jar
+2020-10-20 21:03:43.023+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-procedure-api-4.1.3.jar
+2020-10-20 21:03:43.023+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-cypher-macros-4.1.3.jar
+2020-10-20 21:03:43.023+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-parser-4.1.3.jar
+2020-10-20 21:03:43.023+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jctools-core-3.0.0.jar
+2020-10-20 21:03:43.023+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-graph-algo-4.1.3.jar
+2020-10-20 21:03:43.023+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/shiro-event-1.6.0.jar
+2020-10-20 21:03:43.023+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-record-storage-engine-4.1.3.jar
+2020-10-20 21:03:43.023+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-monitoring-4.1.3.jar
+2020-10-20 21:03:43.023+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-cypher-runtime-util-4.1.3.jar
+2020-10-20 21:03:43.023+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-front-end-4.1.3.jar
+2020-10-20 21:03:43.023+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jersey-client-2.30.1.jar
+2020-10-20 21:03:43.024+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/scala-reflect-2.12.10.jar
+2020-10-20 21:03:43.024+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jetty-io-9.4.26.v20200117.jar
+2020-10-20 21:03:43.024+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-import-util-4.1.3.jar
+2020-10-20 21:03:43.024+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-consistency-check-4.1.3.jar
+2020-10-20 21:03:43.024+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jakarta.activation-1.2.1.jar
+2020-10-20 21:03:43.024+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-bolt-4.1.3.jar
+2020-10-20 21:03:43.024+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-4.1.3.jar
+2020-10-20 21:03:43.024+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/lucene-queryparser-8.5.1.jar
+2020-10-20 21:03:43.024+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-cypher-ir-4.1.3.jar
+2020-10-20 21:03:43.024+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-ssl-4.1.3.jar
+2020-10-20 21:03:43.025+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jetty-util-9.4.26.v20200117.jar
+2020-10-20 21:03:43.025+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/eclipse-collections-10.2.0.jar
+2020-10-20 21:03:43.025+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/shiro-crypto-cipher-1.6.0.jar
+2020-10-20 21:03:43.025+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/shiro-cache-1.6.0.jar
+2020-10-20 21:03:43.025+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-configuration-4.1.3.jar
+2020-10-20 21:03:43.025+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/hk2-api-2.6.1.jar
+2020-10-20 21:03:43.025+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/commons-text-1.8.jar
+2020-10-20 21:03:43.025+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-label-index-4.1.3.jar
+2020-10-20 21:03:43.025+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-cypher-4.1.3.jar
+2020-10-20 21:03:43.025+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-diagnostics-4.1.3.jar
+2020-10-20 21:03:43.025+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-concurrent-4.1.3.jar
+2020-10-20 21:03:43.025+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-logging-4.1.3.jar
+2020-10-20 21:03:43.025+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/plugins
+2020-10-20 21:03:43.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-spatial-index-4.1.3.jar
+2020-10-20 21:03:43.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jna-5.5.0.jar
+2020-10-20 21:03:43.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/slf4j-nop-1.7.30.jar
+2020-10-20 21:03:43.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-collections-4.1.3.jar
+2020-10-20 21:03:43.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/scala-library-2.12.10.jar
+2020-10-20 21:03:43.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/annotations-4.1.3.jar
+2020-10-20 21:03:43.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/server-api-4.1.3.jar
+2020-10-20 21:03:43.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/txw2-2.3.2.jar
+2020-10-20 21:03:43.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/commons-io-2.6.jar
+2020-10-20 21:03:43.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/commons-beanutils-1.9.4.jar
+2020-10-20 21:03:43.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-cypher-logical-plans-4.1.3.jar
+2020-10-20 21:03:43.026+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-codegen-4.1.3.jar
+2020-10-20 21:03:43.027+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/caffeine-2.8.2.jar
+2020-10-20 21:03:43.027+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-cypher-planner-spi-4.1.3.jar
+2020-10-20 21:03:43.027+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/commons-lang3-3.10.jar
+2020-10-20 21:03:43.027+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/hk2-locator-2.6.1.jar
+2020-10-20 21:03:43.027+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-native-4.1.3.jar
+2020-10-20 21:03:43.027+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jakarta.validation-api-2.0.2.jar
+2020-10-20 21:03:43.027+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-wal-4.1.3.jar
+2020-10-20 21:03:43.027+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/zstd-proxy-4.1.3.jar
+2020-10-20 21:03:43.027+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-ast-4.1.3.jar
+2020-10-20 21:03:43.027+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/WMI4Java-1.6.3.jar
+2020-10-20 21:03:43.027+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/eclipse-collections-api-10.2.0.jar
+2020-10-20 21:03:43.027+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-rewriting-4.1.3.jar
+2020-10-20 21:03:43.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jakarta.activation-api-1.2.1.jar
+2020-10-20 21:03:43.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jersey-media-jaxb-2.30.1.jar
+2020-10-20 21:03:43.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/shiro-crypto-hash-1.6.0.jar
+2020-10-20 21:03:43.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-kernel-4.1.3.jar
+2020-10-20 21:03:43.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-procedure-4.1.3.jar
+2020-10-20 21:03:43.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jackson-annotations-2.11.0.jar
+2020-10-20 21:03:43.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/reactive-streams-1.0.3.jar
+2020-10-20 21:03:43.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jaxb-api-2.3.0.jar
+2020-10-20 21:03:43.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jersey-hk2-2.30.1.jar
+2020-10-20 21:03:43.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jackson-databind-2.11.0.jar
+2020-10-20 21:03:43.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/bcprov-jdk15on-1.65.jar
+2020-10-20 21:03:43.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/slf4j-api-1.7.30.jar
+2020-10-20 21:03:43.028+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-unsafe-4.1.3.jar
+2020-10-20 21:03:43.029+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/reactor-core-3.3.5.RELEASE.jar
+2020-10-20 21:03:43.029+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/shiro-lang-1.6.0.jar
+2020-10-20 21:03:43.029+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jettison-1.4.1.jar
+2020-10-20 21:03:43.029+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-security-4.1.3.jar
+2020-10-20 21:03:43.029+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-resource-4.1.3.jar
+2020-10-20 21:03:43.029+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-storage-engine-api-4.1.3.jar
+2020-10-20 21:03:43.029+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/FastInfoset-1.2.16.jar
+2020-10-20 21:03:43.029+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/lucene-core-8.5.1.jar
+2020-10-20 21:03:43.029+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/hk2-utils-2.6.1.jar
+2020-10-20 21:03:43.029+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jakarta.inject-2.6.1.jar
+2020-10-20 21:03:43.029+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jackson-module-jaxb-annotations-2.11.0.jar
+2020-10-20 21:03:43.029+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-values-4.1.3.jar
+2020-10-20 21:03:43.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jersey-server-2.30.1.jar
+2020-10-20 21:03:43.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-lucene-index-4.1.3.jar
+2020-10-20 21:03:43.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-cypher-interpreted-runtime-4.1.3.jar
+2020-10-20 21:03:43.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-lock-4.1.3.jar
+2020-10-20 21:03:43.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-fulltext-index-4.1.3.jar
+2020-10-20 21:03:43.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/commons-logging-1.2.jar
+2020-10-20 21:03:43.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jakarta.annotation-api-1.3.5.jar
+2020-10-20 21:03:43.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/plugins/*
+2020-10-20 21:03:43.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/javax.ws.rs-api-2.1.1.jar
+2020-10-20 21:03:43.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jersey-container-servlet-2.30.1.jar
+2020-10-20 21:03:43.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-common-4.1.3.jar
+2020-10-20 21:03:43.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-graphdb-api-4.1.3.jar
+2020-10-20 21:03:43.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/neo4j-batch-insert-4.1.3.jar
+2020-10-20 21:03:43.030+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /Users/sheldenshi/Dev/neo4j/lib/jakarta.xml.bind-api-2.3.2.jar
+2020-10-20 21:03:43.031+0000 INFO [o.n.i.d.DiagnosticsManager] 
+2020-10-20 21:03:43.031+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:43.031+0000 INFO [o.n.i.d.DiagnosticsManager]                                 [ Library path ]                                
+2020-10-20 21:03:43.031+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:43.031+0000 INFO [o.n.i.d.DiagnosticsManager] /Users/sheldenshi/Library/Java/Extensions
+2020-10-20 21:03:43.031+0000 INFO [o.n.i.d.DiagnosticsManager] /Library/Java/Extensions
+2020-10-20 21:03:43.031+0000 INFO [o.n.i.d.DiagnosticsManager] /Network/Library/Java/Extensions
+2020-10-20 21:03:43.034+0000 INFO [o.n.i.d.DiagnosticsManager] /System/Library/Java/Extensions
+2020-10-20 21:03:43.034+0000 INFO [o.n.i.d.DiagnosticsManager] /usr/lib/java
+2020-10-20 21:03:43.034+0000 INFO [o.n.i.d.DiagnosticsManager] /Users/sheldenshi/Dev
+2020-10-20 21:03:43.034+0000 INFO [o.n.i.d.DiagnosticsManager] 
+2020-10-20 21:03:43.034+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:43.034+0000 INFO [o.n.i.d.DiagnosticsManager]                              [ System properties ]                              
+2020-10-20 21:03:43.034+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:43.035+0000 INFO [o.n.i.d.DiagnosticsManager] gopherProxySet = false
+2020-10-20 21:03:43.035+0000 INFO [o.n.i.d.DiagnosticsManager] awt.toolkit = sun.lwawt.macosx.LWCToolkit
+2020-10-20 21:03:43.035+0000 INFO [o.n.i.d.DiagnosticsManager] jdk.tls.rejectClientInitiatedRenegotiation = true
+2020-10-20 21:03:43.035+0000 INFO [o.n.i.d.DiagnosticsManager] sun.cpu.isalist = 
+2020-10-20 21:03:43.035+0000 INFO [o.n.i.d.DiagnosticsManager] sun.jnu.encoding = UTF-8
+2020-10-20 21:03:43.035+0000 INFO [o.n.i.d.DiagnosticsManager] sun.arch.data.model = 64
+2020-10-20 21:03:43.035+0000 INFO [o.n.i.d.DiagnosticsManager] user.timezone = America/Los_Angeles
+2020-10-20 21:03:43.035+0000 INFO [o.n.i.d.DiagnosticsManager] sun.java.launcher = SUN_STANDARD
+2020-10-20 21:03:43.035+0000 INFO [o.n.i.d.DiagnosticsManager] user.country = US
+2020-10-20 21:03:43.035+0000 INFO [o.n.i.d.DiagnosticsManager] sun.boot.library.path = /Library/Java/JavaVirtualMachines/openjdk-11.0.2.jdk/Contents/Home/lib
+2020-10-20 21:03:43.035+0000 INFO [o.n.i.d.DiagnosticsManager] sun.java.command = org.neo4j.server.CommunityEntryPoint --home-dir=/Users/sheldenshi/Dev/neo4j --config-dir=/Users/sheldenshi/Dev/neo4j/conf
+2020-10-20 21:03:43.035+0000 INFO [o.n.i.d.DiagnosticsManager] http.nonProxyHosts = 192.168.0.0/16|*.192.168.0.0/16|10.0.0.0/8|*.10.0.0.0/8|172.16.0.0/12|*.172.16.0.0/12|127.0.0.1|localhost|*.localhost|local|*.local
+2020-10-20 21:03:43.036+0000 INFO [o.n.i.d.DiagnosticsManager] jdk.debug = release
+2020-10-20 21:03:43.036+0000 INFO [o.n.i.d.DiagnosticsManager] sun.cpu.endian = little
+2020-10-20 21:03:43.036+0000 INFO [o.n.i.d.DiagnosticsManager] io.netty.tryReflectionSetAccessible = true
+2020-10-20 21:03:43.036+0000 INFO [o.n.i.d.DiagnosticsManager] user.home = /Users/sheldenshi
+2020-10-20 21:03:43.036+0000 INFO [o.n.i.d.DiagnosticsManager] user.language = en
+2020-10-20 21:03:43.036+0000 INFO [o.n.i.d.DiagnosticsManager] file.separator = /
+2020-10-20 21:03:43.036+0000 INFO [o.n.i.d.DiagnosticsManager] jdk.tls.ephemeralDHKeySize = 2048
+2020-10-20 21:03:43.036+0000 INFO [o.n.i.d.DiagnosticsManager] sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2020-10-20 21:03:43.036+0000 INFO [o.n.i.d.DiagnosticsManager] ftp.nonProxyHosts = 192.168.0.0/16|*.192.168.0.0/16|10.0.0.0/8|*.10.0.0.0/8|172.16.0.0/12|*.172.16.0.0/12|127.0.0.1|localhost|*.localhost|local|*.local
+2020-10-20 21:03:43.036+0000 INFO [o.n.i.d.DiagnosticsManager] user.name = sheldenshi
+2020-10-20 21:03:43.036+0000 INFO [o.n.i.d.DiagnosticsManager] path.separator = :
+2020-10-20 21:03:43.036+0000 INFO [o.n.i.d.DiagnosticsManager] jdk.nio.maxCachedBufferSize = 262144
+2020-10-20 21:03:43.036+0000 INFO [o.n.i.d.DiagnosticsManager] file.encoding = UTF-8
+2020-10-20 21:03:43.037+0000 INFO [o.n.i.d.DiagnosticsManager] jnidispatch.path = /Users/sheldenshi/Library/Caches/JNA/temp/jna6447239232614823842.tmp
+2020-10-20 21:03:43.037+0000 INFO [o.n.i.d.DiagnosticsManager] jna.loaded = true
+2020-10-20 21:03:43.037+0000 INFO [o.n.i.d.DiagnosticsManager] user.dir = /Users/sheldenshi/Dev
+2020-10-20 21:03:43.037+0000 INFO [o.n.i.d.DiagnosticsManager] sun.os.patch.level = unknown
+2020-10-20 21:03:43.037+0000 INFO [o.n.i.d.DiagnosticsManager] sun.io.unicode.encoding = UnicodeBig
+2020-10-20 21:03:43.037+0000 INFO [o.n.i.d.DiagnosticsManager] socksNonProxyHosts = 192.168.0.0/16|*.192.168.0.0/16|10.0.0.0/8|*.10.0.0.0/8|172.16.0.0/12|*.172.16.0.0/12|127.0.0.1|localhost|*.localhost|local|*.local
+2020-10-20 21:03:43.037+0000 INFO [o.n.i.d.DiagnosticsManager] 
+2020-10-20 21:03:43.037+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:43.037+0000 INFO [o.n.i.d.DiagnosticsManager]                       [ (IANA) TimeZone database version ]                      
+2020-10-20 21:03:43.037+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:43.056+0000 INFO [o.n.i.d.DiagnosticsManager]   TimeZone version: 2018g (available for 599 zone identifiers)
+2020-10-20 21:03:43.056+0000 INFO [o.n.i.d.DiagnosticsManager] 
+2020-10-20 21:03:43.056+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:43.056+0000 INFO [o.n.i.d.DiagnosticsManager]                             [ Network information ]                             
+2020-10-20 21:03:43.056+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:43.064+0000 INFO [o.n.i.d.DiagnosticsManager] Interface utun5:
+2020-10-20 21:03:43.064+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:674b:19f:2d2e:8e2e%utun5
+2020-10-20 21:03:43.064+0000 INFO [o.n.i.d.DiagnosticsManager] Interface utun4:
+2020-10-20 21:03:43.064+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:160a:799e:417b:38e0%utun4
+2020-10-20 21:03:43.064+0000 INFO [o.n.i.d.DiagnosticsManager] Interface utun3:
+2020-10-20 21:03:43.064+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:58a7:f63f:6a7b:cd66%utun3
+2020-10-20 21:03:43.064+0000 INFO [o.n.i.d.DiagnosticsManager] Interface utun2:
+2020-10-20 21:03:43.064+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:f8d4:5bac:a0fc:6788%utun2
+2020-10-20 21:03:43.064+0000 INFO [o.n.i.d.DiagnosticsManager] Interface utun1:
+2020-10-20 21:03:43.064+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:cb59:c18c:6ce2:65e1%utun1
+2020-10-20 21:03:43.064+0000 INFO [o.n.i.d.DiagnosticsManager] Interface utun0:
+2020-10-20 21:03:43.065+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:f3f0:ee14:412a:aeba%utun0
+2020-10-20 21:03:43.065+0000 INFO [o.n.i.d.DiagnosticsManager] Interface llw0:
+2020-10-20 21:03:43.065+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:382c:68ff:fef9:4581%llw0
+2020-10-20 21:03:43.065+0000 INFO [o.n.i.d.DiagnosticsManager] Interface awdl0:
+2020-10-20 21:03:43.065+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:382c:68ff:fef9:4581%awdl0
+2020-10-20 21:03:43.065+0000 INFO [o.n.i.d.DiagnosticsManager] Interface en5:
+2020-10-20 21:03:43.065+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:aede:48ff:fe00:1122%en5
+2020-10-20 21:03:43.065+0000 INFO [o.n.i.d.DiagnosticsManager] Interface gpd0:
+2020-10-20 21:03:43.065+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:50:41ff:fe00:101%gpd0
+2020-10-20 21:03:43.065+0000 INFO [o.n.i.d.DiagnosticsManager]     address: 10.136.132.19
+2020-10-20 21:03:43.066+0000 INFO [o.n.i.d.DiagnosticsManager] Interface en0:
+2020-10-20 21:03:43.066+0000 INFO [o.n.i.d.DiagnosticsManager]     address: 2601:644:680:1470:ac7d:c0ae:64d1:f156%en0
+2020-10-20 21:03:43.066+0000 INFO [o.n.i.d.DiagnosticsManager]     address: 2601:644:680:1470:0:0:0:aa39%en0
+2020-10-20 21:03:43.066+0000 INFO [o.n.i.d.DiagnosticsManager]     address: 2601:644:680:1470:561:edc0:9005:3c66%en0
+2020-10-20 21:03:43.066+0000 INFO [o.n.i.d.DiagnosticsManager]     address: 2601:644:680:1470:18e7:315:623f:5314%en0
+2020-10-20 21:03:43.066+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:86f:9d47:7e46:e5e1%en0
+2020-10-20 21:03:43.066+0000 INFO [o.n.i.d.DiagnosticsManager]     address: 10.0.0.186
+2020-10-20 21:03:43.066+0000 INFO [o.n.i.d.DiagnosticsManager] Interface lo0:
+2020-10-20 21:03:43.066+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:0:0:0:1%lo0
+2020-10-20 21:03:43.066+0000 INFO [o.n.i.d.DiagnosticsManager]     address: 0:0:0:0:0:0:0:1%lo0
+2020-10-20 21:03:43.067+0000 INFO [o.n.i.d.DiagnosticsManager]     address: 127.0.0.1
+2020-10-20 21:03:43.067+0000 INFO [o.n.i.d.DiagnosticsManager] 
+2020-10-20 21:03:43.067+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:43.067+0000 INFO [o.n.i.d.DiagnosticsManager]                          [ Native access information ]                          
+2020-10-20 21:03:43.067+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:43.069+0000 INFO [o.n.i.d.DiagnosticsManager] Native access details: Native access is not available for current platform.
+2020-10-20 21:03:43.069+0000 INFO [o.n.i.d.DiagnosticsManager] 
+2020-10-20 21:03:43.090+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:43.090+0000 INFO [o.n.i.d.DiagnosticsManager]                                 [ DBMS config ]                                 
+2020-10-20 21:03:43.090+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:43.091+0000 INFO [o.n.i.d.DiagnosticsManager] DBMS provided settings:
+2020-10-20 21:03:43.094+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connector.bolt.enabled=true
+2020-10-20 21:03:43.094+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connector.http.enabled=true
+2020-10-20 21:03:43.094+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connector.https.enabled=false
+2020-10-20 21:03:43.094+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.directories.import=/Users/sheldenshi/Dev/neo4j/import
+2020-10-20 21:03:43.094+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.directories.neo4j_home=/Users/sheldenshi/Dev/neo4j
+2020-10-20 21:03:43.094+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.jvm.additional=-XX:+DebugNonSafepoints
+2020-10-20 21:03:43.094+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.tx_log.rotation.retention_policy=1 days
+2020-10-20 21:03:43.094+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.tx_state.memory_allocation=ON_HEAP
+2020-10-20 21:03:43.095+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.windows_service_name=neo4j
+2020-10-20 21:03:43.095+0000 INFO [o.n.i.d.DiagnosticsManager] 
+2020-10-20 21:03:43.129+0000 INFO [o.n.g.f.EditionLocksFactories] Locking implementation 'community' selected.
+2020-10-20 21:03:44.457+0000 INFO [o.n.s.CommunityNeoWebServer] ======== Neo4j 4.1.3 ========
+2020-10-20 21:03:44.467+0000 INFO [o.n.d.d.DefaultDatabaseManager] Creating 'system' database.
+2020-10-20 21:03:44.568+0000 INFO [o.n.b.BoltServer] Bolt server loaded
+2020-10-20 21:03:44.671+0000 INFO [o.n.d.d.DefaultDatabaseManager] Starting 'system' database.
+2020-10-20 21:03:44.734+0000 INFO [o.n.k.i.s.f.RecordFormatSelector] [system] Selected format 'RecordFormat:StandardV4_0[SF4.0.0]' for the new store /Users/sheldenshi/Dev/neo4j/data/databases/system
+2020-10-20 21:03:45.954+0000 INFO [o.n.i.d.DiagnosticsManager] ********************************************************************************
+2020-10-20 21:03:45.954+0000 INFO [o.n.i.d.DiagnosticsManager]                               [ Database: system ]                              
+2020-10-20 21:03:45.954+0000 INFO [o.n.i.d.DiagnosticsManager] ********************************************************************************
+2020-10-20 21:03:45.954+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:45.954+0000 INFO [o.n.i.d.DiagnosticsManager]                                   [ Version ]                                   
+2020-10-20 21:03:45.954+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:45.959+0000 INFO [o.n.i.d.DiagnosticsManager] DBMS: community single StoreId{creationTime=1603227825764, randomId=1295115624555337123, storeVersion=3471765337752883975, upgradeTime=1603227825764, upgradeTxId=1}
+2020-10-20 21:03:45.959+0000 INFO [o.n.i.d.DiagnosticsManager] Kernel version: 4.1.3
+2020-10-20 21:03:45.959+0000 INFO [o.n.i.d.DiagnosticsManager] 
+2020-10-20 21:03:45.960+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:45.960+0000 INFO [o.n.i.d.DiagnosticsManager]                                 [ Store files ]                                 
+2020-10-20 21:03:45.960+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:45.960+0000 INFO [o.n.i.d.DiagnosticsManager] Disk space on partition (Total / Free / Free %): 499963174912 / 300275892224 / 60
+2020-10-20 21:03:45.962+0000 INFO [o.n.i.d.DiagnosticsManager] Storage files stored on file store: apfs
+2020-10-20 21:03:45.962+0000 INFO [o.n.i.d.DiagnosticsManager] Storage files: (filename : modification date - size)
+2020-10-20 21:03:45.964+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore: 2020-10-20T14:03:45-07:00 - 8.000KiB
+2020-10-20 21:03:45.964+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.counts.db: 2020-10-20T14:03:45-07:00 - 40.00KiB
+2020-10-20 21:03:45.964+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.id: 2020-10-20T14:03:45-07:00 - 40.00KiB
+2020-10-20 21:03:45.964+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db: 2020-10-20T14:03:45-07:00 - 0B
+2020-10-20 21:03:45.965+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db.id: 2020-10-20T14:03:45-07:00 - 40.00KiB
+2020-10-20 21:03:45.965+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db.names: 2020-10-20T14:03:45-07:00 - 7.979KiB
+2020-10-20 21:03:45.965+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db.names.id: 2020-10-20T14:03:45-07:00 - 40.00KiB
+2020-10-20 21:03:45.965+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db: 2020-10-20T14:03:45-07:00 - 0B
+2020-10-20 21:03:45.965+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db.id: 2020-10-20T14:03:45-07:00 - 40.00KiB
+2020-10-20 21:03:45.965+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db.labels: 2020-10-20T14:03:45-07:00 - 8.000KiB
+2020-10-20 21:03:45.965+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db.labels.id: 2020-10-20T14:03:44-07:00 - 40.00KiB
+2020-10-20 21:03:45.966+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db: 2020-10-20T14:03:45-07:00 - 0B
+2020-10-20 21:03:45.966+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.arrays: 2020-10-20T14:03:45-07:00 - 8.000KiB
+2020-10-20 21:03:45.966+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.arrays.id: 2020-10-20T14:03:45-07:00 - 40.00KiB
+2020-10-20 21:03:45.966+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.id: 2020-10-20T14:03:45-07:00 - 40.00KiB
+2020-10-20 21:03:45.966+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index: 2020-10-20T14:03:45-07:00 - 0B
+2020-10-20 21:03:45.966+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index.id: 2020-10-20T14:03:45-07:00 - 40.00KiB
+2020-10-20 21:03:45.966+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index.keys: 2020-10-20T14:03:45-07:00 - 7.979KiB
+2020-10-20 21:03:45.967+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index.keys.id: 2020-10-20T14:03:45-07:00 - 40.00KiB
+2020-10-20 21:03:45.967+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.strings: 2020-10-20T14:03:45-07:00 - 8.000KiB
+2020-10-20 21:03:45.967+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.strings.id: 2020-10-20T14:03:45-07:00 - 40.00KiB
+2020-10-20 21:03:45.967+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipgroupstore.db: 2020-10-20T14:03:45-07:00 - 7.983KiB
+2020-10-20 21:03:45.967+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipgroupstore.db.id: 2020-10-20T14:03:45-07:00 - 40.00KiB
+2020-10-20 21:03:45.967+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipstore.db: 2020-10-20T14:03:45-07:00 - 0B
+2020-10-20 21:03:45.968+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipstore.db.id: 2020-10-20T14:03:45-07:00 - 40.00KiB
+2020-10-20 21:03:45.968+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db: 2020-10-20T14:03:45-07:00 - 0B
+2020-10-20 21:03:45.968+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db.id: 2020-10-20T14:03:45-07:00 - 40.00KiB
+2020-10-20 21:03:45.968+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db.names: 2020-10-20T14:03:45-07:00 - 7.979KiB
+2020-10-20 21:03:45.968+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db.names.id: 2020-10-20T14:03:45-07:00 - 40.00KiB
+2020-10-20 21:03:45.969+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.schemastore.db: 2020-10-20T14:03:45-07:00 - 8.000KiB
+2020-10-20 21:03:45.969+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.schemastore.db.id: 2020-10-20T14:03:45-07:00 - 40.00KiB
+2020-10-20 21:03:45.969+0000 INFO [o.n.i.d.DiagnosticsManager] Storage summary: 
+2020-10-20 21:03:45.969+0000 INFO [o.n.i.d.DiagnosticsManager]   Total size of store: 711.9KiB
+2020-10-20 21:03:45.969+0000 INFO [o.n.i.d.DiagnosticsManager]   Total size of mapped files: 71.92KiB
+2020-10-20 21:03:45.970+0000 INFO [o.n.i.d.DiagnosticsManager] 
+2020-10-20 21:03:45.970+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:45.970+0000 INFO [o.n.i.d.DiagnosticsManager]                               [ Transaction log ]                               
+2020-10-20 21:03:45.970+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:45.971+0000 INFO [o.n.i.d.DiagnosticsManager] Transaction log files stored on file store: apfs
+2020-10-20 21:03:45.972+0000 INFO [o.n.i.d.DiagnosticsManager] No transactions found in any log
+2020-10-20 21:03:45.972+0000 INFO [o.n.i.d.DiagnosticsManager] 
+2020-10-20 21:03:45.973+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:45.973+0000 INFO [o.n.i.d.DiagnosticsManager]                                   [ Id usage ]                                  
+2020-10-20 21:03:45.973+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:45.973+0000 INFO [o.n.i.d.DiagnosticsManager] ArrayPropertyStore[neostore.nodestore.db.labels]: used=1 high=0
+2020-10-20 21:03:45.974+0000 INFO [o.n.i.d.DiagnosticsManager] NodeStore[neostore.nodestore.db]: used=0 high=-1
+2020-10-20 21:03:45.974+0000 INFO [o.n.i.d.DiagnosticsManager] StringPropertyStore[neostore.propertystore.db.index.keys]: used=1 high=0
+2020-10-20 21:03:45.975+0000 INFO [o.n.i.d.DiagnosticsManager] PropertyIndexStore[neostore.propertystore.db.index]: used=0 high=-1
+2020-10-20 21:03:45.976+0000 INFO [o.n.i.d.DiagnosticsManager] StringPropertyStore[neostore.propertystore.db.strings]: used=1 high=0
+2020-10-20 21:03:45.976+0000 INFO [o.n.i.d.DiagnosticsManager] ArrayPropertyStore[neostore.propertystore.db.arrays]: used=1 high=0
+2020-10-20 21:03:45.976+0000 INFO [o.n.i.d.DiagnosticsManager] PropertyStore[neostore.propertystore.db]: used=0 high=-1
+2020-10-20 21:03:45.976+0000 INFO [o.n.i.d.DiagnosticsManager] RelationshipStore[neostore.relationshipstore.db]: used=0 high=-1
+2020-10-20 21:03:45.976+0000 INFO [o.n.i.d.DiagnosticsManager] StringPropertyStore[neostore.relationshiptypestore.db.names]: used=1 high=0
+2020-10-20 21:03:45.976+0000 INFO [o.n.i.d.DiagnosticsManager] RelationshipTypeStore[neostore.relationshiptypestore.db]: used=0 high=-1
+2020-10-20 21:03:45.976+0000 INFO [o.n.i.d.DiagnosticsManager] StringPropertyStore[neostore.labeltokenstore.db.names]: used=1 high=0
+2020-10-20 21:03:45.976+0000 INFO [o.n.i.d.DiagnosticsManager] LabelTokenStore[neostore.labeltokenstore.db]: used=0 high=-1
+2020-10-20 21:03:45.976+0000 INFO [o.n.i.d.DiagnosticsManager] SchemaStore[neostore.schemastore.db]: used=1 high=0
+2020-10-20 21:03:45.976+0000 INFO [o.n.i.d.DiagnosticsManager] RelationshipGroupStore[neostore.relationshipgroupstore.db]: used=1 high=0
+2020-10-20 21:03:45.976+0000 INFO [o.n.i.d.DiagnosticsManager] NeoStore[neostore]: used=18 high=17
+2020-10-20 21:03:45.976+0000 INFO [o.n.i.d.DiagnosticsManager] 
+2020-10-20 21:03:45.977+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:45.977+0000 INFO [o.n.i.d.DiagnosticsManager]                               [ Neostore records ]                              
+2020-10-20 21:03:45.977+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:45.983+0000 INFO [o.n.i.d.DiagnosticsManager] TIME (Creation time): 1603227825764
+2020-10-20 21:03:45.983+0000 INFO [o.n.i.d.DiagnosticsManager] RANDOM_NUMBER (Random number for store id): 1295115624555337123
+2020-10-20 21:03:45.984+0000 INFO [o.n.i.d.DiagnosticsManager] LOG_VERSION (Current log version): 0
+2020-10-20 21:03:45.984+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_TRANSACTION_ID (Last committed transaction): 1
+2020-10-20 21:03:45.984+0000 INFO [o.n.i.d.DiagnosticsManager] STORE_VERSION (Store format version): 3471765337752883975
+2020-10-20 21:03:45.984+0000 INFO [o.n.i.d.DiagnosticsManager] FIRST_GRAPH_PROPERTY (First property record containing graph properties): -1
+2020-10-20 21:03:45.984+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_CONSTRAINT_TRANSACTION (Last committed transaction containing constraint changes): 0
+2020-10-20 21:03:45.984+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TRANSACTION_ID (Transaction id most recent upgrade was performed at): 1
+2020-10-20 21:03:45.984+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TIME (Time of last upgrade): 1603227825764
+2020-10-20 21:03:45.984+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_TRANSACTION_CHECKSUM (Checksum of last committed transaction): -559063315
+2020-10-20 21:03:45.984+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TRANSACTION_CHECKSUM (Checksum of transaction id the most recent upgrade was performed at): -559063315
+2020-10-20 21:03:45.984+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_VERSION (Log version where the last transaction commit entry has been written into): 0
+2020-10-20 21:03:45.984+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_BYTE_OFFSET (Byte offset in the log file where the last transaction commit entry has been written into): 64
+2020-10-20 21:03:45.984+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_TRANSACTION_COMMIT_TIMESTAMP (Commit time timestamp for last committed transaction): 0
+2020-10-20 21:03:45.984+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TRANSACTION_COMMIT_TIMESTAMP (Commit timestamp of transaction the most recent upgrade was performed at): 0
+2020-10-20 21:03:45.984+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_MISSING_STORE_FILES_RECOVERY_TIMESTAMP (Timestamp of last attempt to perform a recovery on the store with missing files.): -1
+2020-10-20 21:03:45.984+0000 INFO [o.n.i.d.DiagnosticsManager] EXTERNAL_STORE_UUID_MOST_SIGN_BITS (Database identifier exposed as external store identity. Generated on creation and never updated. Most significant bits.): -1700138018076210227
+2020-10-20 21:03:45.984+0000 INFO [o.n.i.d.DiagnosticsManager] EXTERNAL_STORE_UUID_LEAST_SIGN_BITS (Database identifier exposed as external store identity. Generated on creation and never updated. Least significant bits): -8161726072220631082
+2020-10-20 21:03:45.984+0000 INFO [o.n.i.d.DiagnosticsManager] 
+2020-10-20 21:03:45.985+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:45.985+0000 INFO [o.n.i.d.DiagnosticsManager]                                [ Store versions ]                               
+2020-10-20 21:03:45.985+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:45.985+0000 INFO [o.n.i.d.DiagnosticsManager] ArrayPropertyStore[neostore.nodestore.db.labels] SF4.0.0
+2020-10-20 21:03:45.985+0000 INFO [o.n.i.d.DiagnosticsManager] NodeStore[neostore.nodestore.db] SF4.0.0
+2020-10-20 21:03:45.985+0000 INFO [o.n.i.d.DiagnosticsManager] StringPropertyStore[neostore.propertystore.db.index.keys] SF4.0.0
+2020-10-20 21:03:45.985+0000 INFO [o.n.i.d.DiagnosticsManager] PropertyIndexStore[neostore.propertystore.db.index] SF4.0.0
+2020-10-20 21:03:45.985+0000 INFO [o.n.i.d.DiagnosticsManager] StringPropertyStore[neostore.propertystore.db.strings] SF4.0.0
+2020-10-20 21:03:45.985+0000 INFO [o.n.i.d.DiagnosticsManager] ArrayPropertyStore[neostore.propertystore.db.arrays] SF4.0.0
+2020-10-20 21:03:45.985+0000 INFO [o.n.i.d.DiagnosticsManager] PropertyStore[neostore.propertystore.db] SF4.0.0
+2020-10-20 21:03:45.986+0000 INFO [o.n.i.d.DiagnosticsManager] RelationshipStore[neostore.relationshipstore.db] SF4.0.0
+2020-10-20 21:03:45.986+0000 INFO [o.n.i.d.DiagnosticsManager] StringPropertyStore[neostore.relationshiptypestore.db.names] SF4.0.0
+2020-10-20 21:03:45.986+0000 INFO [o.n.i.d.DiagnosticsManager] RelationshipTypeStore[neostore.relationshiptypestore.db] SF4.0.0
+2020-10-20 21:03:45.986+0000 INFO [o.n.i.d.DiagnosticsManager] StringPropertyStore[neostore.labeltokenstore.db.names] SF4.0.0
+2020-10-20 21:03:45.986+0000 INFO [o.n.i.d.DiagnosticsManager] LabelTokenStore[neostore.labeltokenstore.db] SF4.0.0
+2020-10-20 21:03:45.986+0000 INFO [o.n.i.d.DiagnosticsManager] SchemaStore[neostore.schemastore.db] SF4.0.0
+2020-10-20 21:03:45.986+0000 INFO [o.n.i.d.DiagnosticsManager] RelationshipGroupStore[neostore.relationshipgroupstore.db] SF4.0.0
+2020-10-20 21:03:45.986+0000 INFO [o.n.i.d.DiagnosticsManager] NeoStore[neostore] SF4.0.0
+2020-10-20 21:03:45.986+0000 INFO [o.n.i.d.DiagnosticsManager] 
+2020-10-20 21:03:45.995+0000 INFO [o.n.i.i.l.LabelScanStore] [system] No label index found, this might just be first use. Preparing to rebuild.
+2020-10-20 21:03:46.074+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] [system] Requirement `Database unavailable` makes database system unavailable.
+2020-10-20 21:03:46.075+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] [system] Database system is unavailable.
+2020-10-20 21:03:46.427+0000 WARN [o.n.k.i.s.MetaDataStore] [system] Missing counts store, rebuilding it.
+2020-10-20 21:03:46.439+0000 WARN [o.n.k.i.s.MetaDataStore] [system] Counts store rebuild completed.
+2020-10-20 21:03:46.458+0000 INFO [o.n.i.i.l.LabelScanStore] [system] Rebuilding label index, this may take a while
+2020-10-20 21:03:46.494+0000 INFO [o.n.i.i.l.LabelScanStore] [system] Label index rebuilt (roughly 0 nodes)
+2020-10-20 21:03:46.545+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] [system] Fulfilling of requirement 'Database unavailable' makes database system available.
+2020-10-20 21:03:46.546+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] [system] Database system is ready.
+2020-10-20 21:03:46.547+0000 INFO [o.n.m.DatabaseHealth] [system] Database health set to OK
+2020-10-20 21:03:46.715+0000 INFO [o.n.k.i.a.s.ConstraintIndexCreator] [system] Starting constraint creation: Constraint( name='constraint_6ad50e5f', type='UNIQUENESS', schema=(:Database {name}) ).
+2020-10-20 21:03:46.882+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] [system] Index population started: [Index( id=1, name='constraint_6ad50e5f', type='UNIQUE BTREE', schema=(:Database {name}), indexProvider='native-btree-1.0' )]
+2020-10-20 21:03:46.972+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] [system] Completed node store scan. Flushing all pending updates.
+MultipleIndexPopulator{activeTasks=0, batchedUpdatesFromScan = [0 updates], concurrentUpdateQueue = 0}
+2020-10-20 21:03:47.033+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] [system] Index creation finished for index [Index( id=1, name='constraint_6ad50e5f', type='UNIQUE BTREE', schema=(:Database {name}), indexProvider='native-btree-1.0' )].
+2020-10-20 21:03:47.051+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] [system] TIME/PHASE Final: WRITE[totalTime=9ms], MERGE[totalTime=0ns], BUILD[totalTime=1ms], APPLY_EXTERNAL[totalTime=26ms], FLIP[totalTime=40ms]
+2020-10-20 21:03:47.051+0000 INFO [o.n.k.i.a.s.ConstraintIndexCreator] [system] Constraint Constraint( name='constraint_6ad50e5f', type='UNIQUENESS', schema=(:Database {name}) ) populated, starting verification.
+2020-10-20 21:03:47.051+0000 INFO [o.n.k.i.a.s.ConstraintIndexCreator] [system] Constraint Constraint( name='constraint_6ad50e5f', type='UNIQUENESS', schema=(:Database {name}) ) verified.
+2020-10-20 21:03:47.090+0000 INFO [o.n.k.i.a.i.IndexingService] [system] Constraint org.neo4j.internal.schema.IndexDescriptor@1 is ONLINE.
+2020-10-20 21:03:47.255+0000 INFO [o.n.k.i.a.s.ConstraintIndexCreator] [system] Starting constraint creation: Constraint( name='constraint_952bbd70', type='UNIQUENESS', schema=(:User {name}) ).
+2020-10-20 21:03:47.269+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] [system] Index population started: [Index( id=3, name='constraint_952bbd70', type='UNIQUE BTREE', schema=(:User {name}), indexProvider='native-btree-1.0' )]
+2020-10-20 21:03:47.311+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] [system] Completed node store scan. Flushing all pending updates.
+MultipleIndexPopulator{activeTasks=0, batchedUpdatesFromScan = [0 updates], concurrentUpdateQueue = 0}
+2020-10-20 21:03:47.379+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] [system] Index creation finished for index [Index( id=3, name='constraint_952bbd70', type='UNIQUE BTREE', schema=(:User {name}), indexProvider='native-btree-1.0' )].
+2020-10-20 21:03:47.391+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] [system] TIME/PHASE Final: WRITE[totalTime=23ms], MERGE[totalTime=0ns], BUILD[totalTime=1ms], APPLY_EXTERNAL[totalTime=21ms], FLIP[totalTime=34ms]
+2020-10-20 21:03:47.391+0000 INFO [o.n.k.i.a.s.ConstraintIndexCreator] [system] Constraint Constraint( name='constraint_952bbd70', type='UNIQUENESS', schema=(:User {name}) ) populated, starting verification.
+2020-10-20 21:03:47.391+0000 INFO [o.n.k.i.a.s.ConstraintIndexCreator] [system] Constraint Constraint( name='constraint_952bbd70', type='UNIQUENESS', schema=(:User {name}) ) verified.
+2020-10-20 21:03:47.405+0000 INFO [o.n.k.i.a.i.IndexingService] [system] Constraint org.neo4j.internal.schema.IndexDescriptor@3 is ONLINE.
+2020-10-20 21:03:47.409+0000 INFO [o.n.s.s.s.UserSecurityGraphComponent] Initializing system graph model for component 'security-users' with version -1 and status UNINITIALIZED
+2020-10-20 21:03:47.418+0000 INFO [o.n.s.s.s.UserSecurityGraphComponent] Setting up initial user from defaults: neo4j
+2020-10-20 21:03:47.418+0000 INFO [o.n.s.s.s.UserSecurityGraphComponent] Creating new user 'neo4j' (passwordChangeRequired=true, suspended=false)
+2020-10-20 21:03:47.470+0000 INFO [o.n.s.s.s.UserSecurityGraphComponent] Setting version for 'security-users' to 2
+2020-10-20 21:03:47.486+0000 INFO [o.n.s.s.s.UserSecurityGraphComponent] After initialization of system graph model component 'security-users' have version 2 and status CURRENT
+2020-10-20 21:03:47.500+0000 INFO [o.n.s.s.s.UserSecurityGraphComponent] Performing postInitialization step for component 'security-users' with version 2 and status CURRENT
+2020-10-20 21:03:47.504+0000 INFO [o.n.d.d.DefaultDatabaseManager] Creating 'neo4j' database.
+2020-10-20 21:03:47.504+0000 INFO [o.n.d.d.DefaultDatabaseManager] Starting 'neo4j' database.
+2020-10-20 21:03:47.505+0000 INFO [o.n.k.i.s.f.RecordFormatSelector] [neo4j] Selected format 'RecordFormat:StandardV4_0[SF4.0.0]' for the new store /Users/sheldenshi/Dev/neo4j/data/databases/neo4j
+2020-10-20 21:03:48.330+0000 INFO [o.n.i.d.DiagnosticsManager] ********************************************************************************
+2020-10-20 21:03:48.330+0000 INFO [o.n.i.d.DiagnosticsManager]                               [ Database: neo4j ]                               
+2020-10-20 21:03:48.330+0000 INFO [o.n.i.d.DiagnosticsManager] ********************************************************************************
+2020-10-20 21:03:48.330+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:48.330+0000 INFO [o.n.i.d.DiagnosticsManager]                                   [ Version ]                                   
+2020-10-20 21:03:48.330+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:48.330+0000 INFO [o.n.i.d.DiagnosticsManager] DBMS: community single StoreId{creationTime=1603227828270, randomId=4883969024160700420, storeVersion=3471765337752883975, upgradeTime=1603227828270, upgradeTxId=1}
+2020-10-20 21:03:48.330+0000 INFO [o.n.i.d.DiagnosticsManager] Kernel version: 4.1.3
+2020-10-20 21:03:48.330+0000 INFO [o.n.i.d.DiagnosticsManager] 
+2020-10-20 21:03:48.331+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:48.331+0000 INFO [o.n.i.d.DiagnosticsManager]                                 [ Store files ]                                 
+2020-10-20 21:03:48.331+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:48.331+0000 INFO [o.n.i.d.DiagnosticsManager] Disk space on partition (Total / Free / Free %): 499963174912 / 300274954240 / 60
+2020-10-20 21:03:48.331+0000 INFO [o.n.i.d.DiagnosticsManager] Storage files stored on file store: apfs
+2020-10-20 21:03:48.331+0000 INFO [o.n.i.d.DiagnosticsManager] Storage files: (filename : modification date - size)
+2020-10-20 21:03:48.332+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore: 2020-10-20T14:03:48-07:00 - 8.000KiB
+2020-10-20 21:03:48.332+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.counts.db: 2020-10-20T14:03:48-07:00 - 40.00KiB
+2020-10-20 21:03:48.333+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.id: 2020-10-20T14:03:48-07:00 - 40.00KiB
+2020-10-20 21:03:48.333+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db: 2020-10-20T14:03:48-07:00 - 0B
+2020-10-20 21:03:48.333+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db.id: 2020-10-20T14:03:48-07:00 - 40.00KiB
+2020-10-20 21:03:48.333+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db.names: 2020-10-20T14:03:48-07:00 - 7.979KiB
+2020-10-20 21:03:48.333+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db.names.id: 2020-10-20T14:03:48-07:00 - 40.00KiB
+2020-10-20 21:03:48.334+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db: 2020-10-20T14:03:47-07:00 - 0B
+2020-10-20 21:03:48.334+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db.id: 2020-10-20T14:03:47-07:00 - 40.00KiB
+2020-10-20 21:03:48.334+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db.labels: 2020-10-20T14:03:47-07:00 - 8.000KiB
+2020-10-20 21:03:48.334+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db.labels.id: 2020-10-20T14:03:47-07:00 - 40.00KiB
+2020-10-20 21:03:48.334+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db: 2020-10-20T14:03:47-07:00 - 0B
+2020-10-20 21:03:48.334+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.arrays: 2020-10-20T14:03:47-07:00 - 8.000KiB
+2020-10-20 21:03:48.335+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.arrays.id: 2020-10-20T14:03:47-07:00 - 40.00KiB
+2020-10-20 21:03:48.335+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.id: 2020-10-20T14:03:47-07:00 - 40.00KiB
+2020-10-20 21:03:48.335+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index: 2020-10-20T14:03:47-07:00 - 0B
+2020-10-20 21:03:48.335+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index.id: 2020-10-20T14:03:47-07:00 - 40.00KiB
+2020-10-20 21:03:48.335+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index.keys: 2020-10-20T14:03:47-07:00 - 7.979KiB
+2020-10-20 21:03:48.335+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index.keys.id: 2020-10-20T14:03:47-07:00 - 40.00KiB
+2020-10-20 21:03:48.336+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.strings: 2020-10-20T14:03:47-07:00 - 8.000KiB
+2020-10-20 21:03:48.336+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.strings.id: 2020-10-20T14:03:47-07:00 - 40.00KiB
+2020-10-20 21:03:48.336+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipgroupstore.db: 2020-10-20T14:03:48-07:00 - 7.983KiB
+2020-10-20 21:03:48.336+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipgroupstore.db.id: 2020-10-20T14:03:48-07:00 - 40.00KiB
+2020-10-20 21:03:48.336+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipstore.db: 2020-10-20T14:03:47-07:00 - 0B
+2020-10-20 21:03:48.336+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipstore.db.id: 2020-10-20T14:03:47-07:00 - 40.00KiB
+2020-10-20 21:03:48.336+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db: 2020-10-20T14:03:48-07:00 - 0B
+2020-10-20 21:03:48.337+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db.id: 2020-10-20T14:03:48-07:00 - 40.00KiB
+2020-10-20 21:03:48.337+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db.names: 2020-10-20T14:03:47-07:00 - 7.979KiB
+2020-10-20 21:03:48.337+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db.names.id: 2020-10-20T14:03:47-07:00 - 40.00KiB
+2020-10-20 21:03:48.337+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.schemastore.db: 2020-10-20T14:03:48-07:00 - 8.000KiB
+2020-10-20 21:03:48.338+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.schemastore.db.id: 2020-10-20T14:03:48-07:00 - 40.00KiB
+2020-10-20 21:03:48.338+0000 INFO [o.n.i.d.DiagnosticsManager] Storage summary: 
+2020-10-20 21:03:48.338+0000 INFO [o.n.i.d.DiagnosticsManager]   Total size of store: 711.9KiB
+2020-10-20 21:03:48.338+0000 INFO [o.n.i.d.DiagnosticsManager]   Total size of mapped files: 71.92KiB
+2020-10-20 21:03:48.338+0000 INFO [o.n.i.d.DiagnosticsManager] 
+2020-10-20 21:03:48.338+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:48.338+0000 INFO [o.n.i.d.DiagnosticsManager]                               [ Transaction log ]                               
+2020-10-20 21:03:48.338+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:48.338+0000 INFO [o.n.i.d.DiagnosticsManager] Transaction log files stored on file store: apfs
+2020-10-20 21:03:48.339+0000 INFO [o.n.i.d.DiagnosticsManager] No transactions found in any log
+2020-10-20 21:03:48.339+0000 INFO [o.n.i.d.DiagnosticsManager] 
+2020-10-20 21:03:48.339+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:48.339+0000 INFO [o.n.i.d.DiagnosticsManager]                                   [ Id usage ]                                  
+2020-10-20 21:03:48.339+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:48.339+0000 INFO [o.n.i.d.DiagnosticsManager] ArrayPropertyStore[neostore.nodestore.db.labels]: used=1 high=0
+2020-10-20 21:03:48.339+0000 INFO [o.n.i.d.DiagnosticsManager] NodeStore[neostore.nodestore.db]: used=0 high=-1
+2020-10-20 21:03:48.339+0000 INFO [o.n.i.d.DiagnosticsManager] StringPropertyStore[neostore.propertystore.db.index.keys]: used=1 high=0
+2020-10-20 21:03:48.339+0000 INFO [o.n.i.d.DiagnosticsManager] PropertyIndexStore[neostore.propertystore.db.index]: used=0 high=-1
+2020-10-20 21:03:48.339+0000 INFO [o.n.i.d.DiagnosticsManager] StringPropertyStore[neostore.propertystore.db.strings]: used=1 high=0
+2020-10-20 21:03:48.339+0000 INFO [o.n.i.d.DiagnosticsManager] ArrayPropertyStore[neostore.propertystore.db.arrays]: used=1 high=0
+2020-10-20 21:03:48.339+0000 INFO [o.n.i.d.DiagnosticsManager] PropertyStore[neostore.propertystore.db]: used=0 high=-1
+2020-10-20 21:03:48.339+0000 INFO [o.n.i.d.DiagnosticsManager] RelationshipStore[neostore.relationshipstore.db]: used=0 high=-1
+2020-10-20 21:03:48.339+0000 INFO [o.n.i.d.DiagnosticsManager] StringPropertyStore[neostore.relationshiptypestore.db.names]: used=1 high=0
+2020-10-20 21:03:48.339+0000 INFO [o.n.i.d.DiagnosticsManager] RelationshipTypeStore[neostore.relationshiptypestore.db]: used=0 high=-1
+2020-10-20 21:03:48.339+0000 INFO [o.n.i.d.DiagnosticsManager] StringPropertyStore[neostore.labeltokenstore.db.names]: used=1 high=0
+2020-10-20 21:03:48.339+0000 INFO [o.n.i.d.DiagnosticsManager] LabelTokenStore[neostore.labeltokenstore.db]: used=0 high=-1
+2020-10-20 21:03:48.340+0000 INFO [o.n.i.d.DiagnosticsManager] SchemaStore[neostore.schemastore.db]: used=1 high=0
+2020-10-20 21:03:48.340+0000 INFO [o.n.i.d.DiagnosticsManager] RelationshipGroupStore[neostore.relationshipgroupstore.db]: used=1 high=0
+2020-10-20 21:03:48.340+0000 INFO [o.n.i.d.DiagnosticsManager] NeoStore[neostore]: used=18 high=17
+2020-10-20 21:03:48.340+0000 INFO [o.n.i.d.DiagnosticsManager] 
+2020-10-20 21:03:48.340+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:48.340+0000 INFO [o.n.i.d.DiagnosticsManager]                               [ Neostore records ]                              
+2020-10-20 21:03:48.340+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:48.340+0000 INFO [o.n.i.d.DiagnosticsManager] TIME (Creation time): 1603227828270
+2020-10-20 21:03:48.340+0000 INFO [o.n.i.d.DiagnosticsManager] RANDOM_NUMBER (Random number for store id): 4883969024160700420
+2020-10-20 21:03:48.340+0000 INFO [o.n.i.d.DiagnosticsManager] LOG_VERSION (Current log version): 0
+2020-10-20 21:03:48.340+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_TRANSACTION_ID (Last committed transaction): 1
+2020-10-20 21:03:48.340+0000 INFO [o.n.i.d.DiagnosticsManager] STORE_VERSION (Store format version): 3471765337752883975
+2020-10-20 21:03:48.340+0000 INFO [o.n.i.d.DiagnosticsManager] FIRST_GRAPH_PROPERTY (First property record containing graph properties): -1
+2020-10-20 21:03:48.340+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_CONSTRAINT_TRANSACTION (Last committed transaction containing constraint changes): 0
+2020-10-20 21:03:48.340+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TRANSACTION_ID (Transaction id most recent upgrade was performed at): 1
+2020-10-20 21:03:48.340+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TIME (Time of last upgrade): 1603227828270
+2020-10-20 21:03:48.340+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_TRANSACTION_CHECKSUM (Checksum of last committed transaction): -559063315
+2020-10-20 21:03:48.340+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TRANSACTION_CHECKSUM (Checksum of transaction id the most recent upgrade was performed at): -559063315
+2020-10-20 21:03:48.340+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_VERSION (Log version where the last transaction commit entry has been written into): 0
+2020-10-20 21:03:48.340+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_BYTE_OFFSET (Byte offset in the log file where the last transaction commit entry has been written into): 64
+2020-10-20 21:03:48.340+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_TRANSACTION_COMMIT_TIMESTAMP (Commit time timestamp for last committed transaction): 0
+2020-10-20 21:03:48.341+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TRANSACTION_COMMIT_TIMESTAMP (Commit timestamp of transaction the most recent upgrade was performed at): 0
+2020-10-20 21:03:48.341+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_MISSING_STORE_FILES_RECOVERY_TIMESTAMP (Timestamp of last attempt to perform a recovery on the store with missing files.): -1
+2020-10-20 21:03:48.341+0000 INFO [o.n.i.d.DiagnosticsManager] EXTERNAL_STORE_UUID_MOST_SIGN_BITS (Database identifier exposed as external store identity. Generated on creation and never updated. Most significant bits.): -4802097027514742115
+2020-10-20 21:03:48.341+0000 INFO [o.n.i.d.DiagnosticsManager] EXTERNAL_STORE_UUID_LEAST_SIGN_BITS (Database identifier exposed as external store identity. Generated on creation and never updated. Least significant bits): -5169798981075501423
+2020-10-20 21:03:48.341+0000 INFO [o.n.i.d.DiagnosticsManager] 
+2020-10-20 21:03:48.341+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:48.341+0000 INFO [o.n.i.d.DiagnosticsManager]                                [ Store versions ]                               
+2020-10-20 21:03:48.341+0000 INFO [o.n.i.d.DiagnosticsManager] --------------------------------------------------------------------------------
+2020-10-20 21:03:48.341+0000 INFO [o.n.i.d.DiagnosticsManager] ArrayPropertyStore[neostore.nodestore.db.labels] SF4.0.0
+2020-10-20 21:03:48.341+0000 INFO [o.n.i.d.DiagnosticsManager] NodeStore[neostore.nodestore.db] SF4.0.0
+2020-10-20 21:03:48.341+0000 INFO [o.n.i.d.DiagnosticsManager] StringPropertyStore[neostore.propertystore.db.index.keys] SF4.0.0
+2020-10-20 21:03:48.341+0000 INFO [o.n.i.d.DiagnosticsManager] PropertyIndexStore[neostore.propertystore.db.index] SF4.0.0
+2020-10-20 21:03:48.341+0000 INFO [o.n.i.d.DiagnosticsManager] StringPropertyStore[neostore.propertystore.db.strings] SF4.0.0
+2020-10-20 21:03:48.341+0000 INFO [o.n.i.d.DiagnosticsManager] ArrayPropertyStore[neostore.propertystore.db.arrays] SF4.0.0
+2020-10-20 21:03:48.341+0000 INFO [o.n.i.d.DiagnosticsManager] PropertyStore[neostore.propertystore.db] SF4.0.0
+2020-10-20 21:03:48.341+0000 INFO [o.n.i.d.DiagnosticsManager] RelationshipStore[neostore.relationshipstore.db] SF4.0.0
+2020-10-20 21:03:48.341+0000 INFO [o.n.i.d.DiagnosticsManager] StringPropertyStore[neostore.relationshiptypestore.db.names] SF4.0.0
+2020-10-20 21:03:48.341+0000 INFO [o.n.i.d.DiagnosticsManager] RelationshipTypeStore[neostore.relationshiptypestore.db] SF4.0.0
+2020-10-20 21:03:48.341+0000 INFO [o.n.i.d.DiagnosticsManager] StringPropertyStore[neostore.labeltokenstore.db.names] SF4.0.0
+2020-10-20 21:03:48.341+0000 INFO [o.n.i.d.DiagnosticsManager] LabelTokenStore[neostore.labeltokenstore.db] SF4.0.0
+2020-10-20 21:03:48.341+0000 INFO [o.n.i.d.DiagnosticsManager] SchemaStore[neostore.schemastore.db] SF4.0.0
+2020-10-20 21:03:48.342+0000 INFO [o.n.i.d.DiagnosticsManager] RelationshipGroupStore[neostore.relationshipgroupstore.db] SF4.0.0
+2020-10-20 21:03:48.342+0000 INFO [o.n.i.d.DiagnosticsManager] NeoStore[neostore] SF4.0.0
+2020-10-20 21:03:48.342+0000 INFO [o.n.i.d.DiagnosticsManager] 
+2020-10-20 21:03:48.342+0000 INFO [o.n.i.i.l.LabelScanStore] [neo4j] No label index found, this might just be first use. Preparing to rebuild.
+2020-10-20 21:03:48.408+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] [neo4j] Requirement `Database unavailable` makes database neo4j unavailable.
+2020-10-20 21:03:48.408+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] [neo4j] Database neo4j is unavailable.
+2020-10-20 21:03:48.762+0000 WARN [o.n.k.i.s.MetaDataStore] [neo4j] Missing counts store, rebuilding it.
+2020-10-20 21:03:48.763+0000 WARN [o.n.k.i.s.MetaDataStore] [neo4j] Counts store rebuild completed.
+2020-10-20 21:03:48.766+0000 INFO [o.n.i.i.l.LabelScanStore] [neo4j] Rebuilding label index, this may take a while
+2020-10-20 21:03:48.787+0000 INFO [o.n.i.i.l.LabelScanStore] [neo4j] Label index rebuilt (roughly 0 nodes)
+2020-10-20 21:03:48.788+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] [neo4j] Fulfilling of requirement 'Database unavailable' makes database neo4j available.
+2020-10-20 21:03:48.788+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] [neo4j] Database neo4j is ready.
+2020-10-20 21:03:48.788+0000 INFO [o.n.m.DatabaseHealth] [neo4j] Database health set to OK
+2020-10-20 21:03:48.887+0000 INFO [o.n.b.BoltServer] Bolt enabled on localhost:7687.
+2020-10-20 21:03:48.887+0000 INFO [o.n.s.AbstractNeoWebServer$ServerComponentsLifecycleAdapter] Starting web server
+2020-10-20 21:03:49.884+0000 INFO [o.n.s.CommunityNeoWebServer] Remote interface available at http://localhost:7474/
+2020-10-20 21:03:49.885+0000 INFO [o.n.s.AbstractNeoWebServer$ServerComponentsLifecycleAdapter] Web server started.
+2020-10-20 21:04:16.830+0000 WARN [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2020-10-20 21:04:17.287+0000 WARN [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2020-10-20 21:21:48.132+0000 INFO [o.n.c.i.ExecutionEngine] [neo4j] Discarded stale query from the query cache after 986 seconds. Reason: CardinalityByLabelsAndRelationshipType(None,None,None) changed from 1.0 to 253.0, which is a divergence of 0.9960474308300395 which is greater than threshold 0.5990595502292289. Query: CALL db.labels()
+  YIELD label
+RETURN {name: "labels", data: COLLECT(label)[..1000]} AS result
+UNION ALL
+CALL db.relationshipTypes()
+  YIELD relationshipType
+RETURN {name: "relationshipTypes", data: COLLECT(relationshipType)[..1000]} AS result
+UNION ALL
+CALL db.propertyKeys()
+  YIELD propertyKey
+RETURN {name: "propertyKeys", data: COLLECT(propertyKey)[..1000]} AS result
+UNION ALL
+CALL dbms.functions()
+  YIELD name, signature, description
+RETURN {name: "functions", data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures()
+  YIELD name, signature, description
+RETURN {name: "procedures", data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+MATCH ()
+RETURN {name: "nodes", data: count(*)} AS result
+UNION ALL
+MATCH ()-->()
+RETURN {name: "relationships", data: count(*)} AS result
+2020-10-20 21:21:49.085+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] [neo4j] Checkpoint triggered by "Scheduled checkpoint for every 15 minutes threshold" @ txId: 18 checkpoint started...
+2020-10-20 21:21:49.616+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] [neo4j] Checkpoint triggered by "Scheduled checkpoint for every 15 minutes threshold" @ txId: 18 checkpoint completed in 530ms
+2020-10-20 21:21:49.630+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] [neo4j] No log version pruned. The strategy used was '1 days'. Last checkpoint was made in log version 0.
+2020-10-20 21:22:05.618+0000 INFO [o.n.c.i.ExecutionEngine] [neo4j] Discarded stale query from the query cache after 24 seconds. Reason: NodesAllCardinality changed from 10.0 to 171.0, which is a divergence of 0.9415204678362573 which is greater than threshold 0.7471205458090779. Query: CREATE (TheMatrix:Movie {title: "The Matrix", released: 1999, tagline: "Welcome to the Real World"})
+CREATE (Keanu:Person {name: "Keanu Reeves", born: 1964})
+CREATE (Carrie:Person {name: "Carrie-Anne Moss", born: 1967})
+CREATE (Laurence:Person {name: "Laurence Fishburne", born: 1961})
+CREATE (Hugo:Person {name: "Hugo Weaving", born: 1960})
+CREATE (LillyW:Person {name: "Lilly Wachowski", born: 1967})
+CREATE (LanaW:Person {name: "Lana Wachowski", born: 1965})
+CREATE (JoelS:Person {name: "Joel Silver", born: 1952})
+CREATE (Keanu)-[:ACTED_IN {roles: ["Neo"]}]->(TheMatrix), (Carrie)-[:ACTED_IN {roles: ["Trinity"]}]->(TheMatrix), (Laurence)-[:ACTED_IN {roles: ["Morpheus"]}]->(TheMatrix), (Hugo)-[:ACTED_IN {roles: ["Agent Smith"]}]->(TheMatrix), (LillyW)-[:DIRECTED]->(TheMatrix), (LanaW)-[:DIRECTED]->(TheMatrix), (JoelS)-[:PRODUCED]->(TheMatrix)
+CREATE (Emil:Person {name: "Emil Eifrem", born: 1978})
+CREATE (Emil)-[:ACTED_IN {roles: ["Emil"]}]->(TheMatrix)
+CREATE (TheMatrixReloaded:Movie {title: "The Matrix Reloaded", released: 2003, tagline: "Free your mind"})
+CREATE (Keanu)-[:ACTED_IN {roles: ["Neo"]}]->(TheMatrixReloaded), (Carrie)-[:ACTED_IN {roles: ["Trinity"]}]->(TheMatrixReloaded), (Laurence)-[:ACTED_IN {roles: ["Morpheus"]}]->(TheMatrixReloaded), (Hugo)-[:ACTED_IN {roles: ["Agent Smith"]}]->(TheMatrixReloaded), (LillyW)-[:DIRECTED]->(TheMatrixReloaded), (LanaW)-[:DIRECTED]->(TheMatrixReloaded), (JoelS)-[:PRODUCED]->(TheMatrixReloaded)
+CREATE (TheMatrixRevolutions:Movie {title: "The Matrix Revolutions", released: 2003, tagline: "Everything that has a beginning has an end"})
+CREATE (Keanu)-[:ACTED_IN {roles: ["Neo"]}]->(TheMatrixRevolutions), (Carrie)-[:ACTED_IN {roles: ["Trinity"]}]->(TheMatrixRevolutions), (Laurence)-[:ACTED_IN {roles: ["Morpheus"]}]->(TheMatrixRevolutions), (Hugo)-[:ACTED_IN {roles: ["Agent Smith"]}]->(TheMatrixRevolutions), (LillyW)-[:DIRECTED]->(TheMatrixRevolutions), (LanaW)-[:DIRECTED]->(TheMatrixRevolutions), (JoelS)-[:PRODUCED]->(TheMatrixRevolutions)
+CREATE (TheDevilsAdvocate:Movie {title: "The Devil's Advocate", released: 1997, tagline: "Evil has its winning ways"})
+CREATE (Charlize:Person {name: "Charlize Theron", born: 1975})
+CREATE (Al:Person {name: "Al Pacino", born: 1940})
+CREATE (Taylor:Person {name: "Taylor Hackford", born: 1944})
+CREATE (Keanu)-[:ACTED_IN {roles: ["Kevin Lomax"]}]->(TheDevilsAdvocate), (Charlize)-[:ACTED_IN {roles: ["Mary Ann Lomax"]}]->(TheDevilsAdvocate), (Al)-[:ACTED_IN {roles: ["John Milton"]}]->(TheDevilsAdvocate), (Taylor)-[:DIRECTED]->(TheDevilsAdvocate)
+CREATE (AFewGoodMen:Movie {title: "A Few Good Men", released: 1992, tagline: "In the heart of the nation's capital, in a courthouse of the U.S. government, one man will stop at nothing to keep his honor, and one will stop at nothing to find the truth."})
+CREATE (TomC:Person {name: "Tom Cruise", born: 1962})
+CREATE (JackN:Person {name: "Jack Nicholson", born: 1937})
+CREATE (DemiM:Person {name: "Demi Moore", born: 1962})
+CREATE (KevinB:Person {name: "Kevin Bacon", born: 1958})
+CREATE (KieferS:Person {name: "Kiefer Sutherland", born: 1966})
+CREATE (NoahW:Person {name: "Noah Wyle", born: 1971})
+CREATE (CubaG:Person {name: "Cuba Gooding Jr.", born: 1968})
+CREATE (KevinP:Person {name: "Kevin Pollak", born: 1957})
+CREATE (JTW:Person {name: "J.T. Walsh", born: 1943})
+CREATE (JamesM:Person {name: "James Marshall", born: 1967})
+CREATE (ChristopherG:Person {name: "Christopher Guest", born: 1948})
+CREATE (RobR:Person {name: "Rob Reiner", born: 1947})
+CREATE (AaronS:Person {name: "Aaron Sorkin", born: 1961})
+CREATE (TomC)-[:ACTED_IN {roles: ["Lt. Daniel Kaffee"]}]->(AFewGoodMen), (JackN)-[:ACTED_IN {roles: ["Col. Nathan R. Jessup"]}]->(AFewGoodMen), (DemiM)-[:ACTED_IN {roles: ["Lt. Cdr. JoAnne Galloway"]}]->(AFewGoodMen), (KevinB)-[:ACTED_IN {roles: ["Capt. Jack Ross"]}]->(AFewGoodMen), (KieferS)-[:ACTED_IN {roles: ["Lt. Jonathan Kendrick"]}]->(AFewGoodMen), (NoahW)-[:ACTED_IN {roles: ["Cpl. Jeffrey Barnes"]}]->(AFewGoodMen), (CubaG)-[:ACTED_IN {roles: ["Cpl. Carl Hammaker"]}]->(AFewGoodMen), (KevinP)-[:ACTED_IN {roles: ["Lt. Sam Weinberg"]}]->(AFewGoodMen), (JTW)-[:ACTED_IN {roles: ["Lt. Col. Matthew Andrew Markinson"]}]->(AFewGoodMen), (JamesM)-[:ACTED_IN {roles: ["Pfc. Louden Downey"]}]->(AFewGoodMen), (ChristopherG)-[:ACTED_IN {roles: ["Dr. Stone"]}]->(AFewGoodMen), (AaronS)-[:ACTED_IN {roles: ["Man in Bar"]}]->(AFewGoodMen), (RobR)-[:DIRECTED]->(AFewGoodMen), (AaronS)-[:WROTE]->(AFewGoodMen)
+CREATE (TopGun:Movie {title: "Top Gun", released: 1986, tagline: "I feel the need, the need for speed."})
+CREATE (KellyM:Person {name: "Kelly McGillis", born: 1957})
+CREATE (ValK:Person {name: "Val Kilmer", born: 1959})
+CREATE (AnthonyE:Person {name: "Anthony Edwards", born: 1962})
+CREATE (TomS:Person {name: "Tom Skerritt", born: 1933})
+CREATE (MegR:Person {name: "Meg Ryan", born: 1961})
+CREATE (TonyS:Person {name: "Tony Scott", born: 1944})
+CREATE (JimC:Person {name: "Jim Cash", born: 1941})
+CREATE (TomC)-[:ACTED_IN {roles: ["Maverick"]}]->(TopGun), (KellyM)-[:ACTED_IN {roles: ["Charlie"]}]->(TopGun), (ValK)-[:ACTED_IN {roles: ["Iceman"]}]->(TopGun), (AnthonyE)-[:ACTED_IN {roles: ["Goose"]}]->(TopGun), (TomS)-[:ACTED_IN {roles: ["Viper"]}]->(TopGun), (MegR)-[:ACTED_IN {roles: ["Carole"]}]->(TopGun), (TonyS)-[:DIRECTED]->(TopGun), (JimC)-[:WROTE]->(TopGun)
+CREATE (JerryMaguire:Movie {title: "Jerry Maguire", released: 2000, tagline: "The rest of his life begins now."})
+CREATE (ReneeZ:Person {name: "Renee Zellweger", born: 1969})
+CREATE (KellyP:Person {name: "Kelly Preston", born: 1962})
+CREATE (JerryO:Person {name: "Jerry O'Connell", born: 1974})
+CREATE (JayM:Person {name: "Jay Mohr", born: 1970})
+CREATE (BonnieH:Person {name: "Bonnie Hunt", born: 1961})
+CREATE (ReginaK:Person {name: "Regina King", born: 1971})
+CREATE (JonathanL:Person {name: "Jonathan Lipnicki", born: 1996})
+CREATE (CameronC:Person {name: "Cameron Crowe", born: 1957})
+CREATE (TomC)-[:ACTED_IN {roles: ["Jerry Maguire"]}]->(JerryMaguire), (CubaG)-[:ACTED_IN {roles: ["Rod Tidwell"]}]->(JerryMaguire), (ReneeZ)-[:ACTED_IN {roles: ["Dorothy Boyd"]}]->(JerryMaguire), (KellyP)-[:ACTED_IN {roles: ["Avery Bishop"]}]->(JerryMaguire), (JerryO)-[:ACTED_IN {roles: ["Frank Cushman"]}]->(JerryMaguire), (JayM)-[:ACTED_IN {roles: ["Bob Sugar"]}]->(JerryMaguire), (BonnieH)-[:ACTED_IN {roles: ["Laurel Boyd"]}]->(JerryMaguire), (ReginaK)-[:ACTED_IN {roles: ["Marcee Tidwell"]}]->(JerryMaguire), (JonathanL)-[:ACTED_IN {roles: ["Ray Boyd"]}]->(JerryMaguire), (CameronC)-[:DIRECTED]->(JerryMaguire), (CameronC)-[:PRODUCED]->(JerryMaguire), (CameronC)-[:WROTE]->(JerryMaguire)
+CREATE (StandByMe:Movie {title: "Stand By Me", released: 1986, tagline: "For some, it's the last real taste of innocence, and the first real taste of life. But for everyone, it's the time that memories are made of."})
+CREATE (RiverP:Person {name: "River Phoenix", born: 1970})
+CREATE (CoreyF:Person {name: "Corey Feldman", born: 1971})
+CREATE (WilW:Person {name: "Wil Wheaton", born: 1972})
+CREATE (JohnC:Person {name: "John Cusack", born: 1966})
+CREATE (MarshallB:Person {name: "Marshall Bell", born: 1942})
+CREATE (WilW)-[:ACTED_IN {roles: ["Gordie Lachance"]}]->(StandByMe), (RiverP)-[:ACTED_IN {roles: ["Chris Chambers"]}]->(StandByMe), (JerryO)-[:ACTED_IN {roles: ["Vern Tessio"]}]->(StandByMe), (CoreyF)-[:ACTED_IN {roles: ["Teddy Duchamp"]}]->(StandByMe), (JohnC)-[:ACTED_IN {roles: ["Denny Lachance"]}]->(StandByMe), (KieferS)-[:ACTED_IN {roles: ["Ace Merrill"]}]->(StandByMe), (MarshallB)-[:ACTED_IN {roles: ["Mr. Lachance"]}]->(StandByMe), (RobR)-[:DIRECTED]->(StandByMe)
+CREATE (AsGoodAsItGets:Movie {title: "As Good as It Gets", released: 1997, tagline: "A comedy from the heart that goes for the throat."})
+CREATE (HelenH:Person {name: "Helen Hunt", born: 1963})
+CREATE (GregK:Person {name: "Greg Kinnear", born: 1963})
+CREATE (JamesB:Person {name: "James L. Brooks", born: 1940})
+CREATE (JackN)-[:ACTED_IN {roles: ["Melvin Udall"]}]->(AsGoodAsItGets), (HelenH)-[:ACTED_IN {roles: ["Carol Connelly"]}]->(AsGoodAsItGets), (GregK)-[:ACTED_IN {roles: ["Simon Bishop"]}]->(AsGoodAsItGets), (CubaG)-[:ACTED_IN {roles: ["Frank Sachs"]}]->(AsGoodAsItGets), (JamesB)-[:DIRECTED]->(AsGoodAsItGets)
+CREATE (WhatDreamsMayCome:Movie {title: "What Dreams May Come", released: 1998, tagline: "After life there is more. The end is just the beginning."})
+CREATE (AnnabellaS:Person {name: "Annabella Sciorra", born: 1960})
+CREATE (MaxS:Person {name: "Max von Sydow", born: 1929})
+CREATE (WernerH:Person {name: "Werner Herzog", born: 1942})
+CREATE (Robin:Person {name: "Robin Williams", born: 1951})
+CREATE (VincentW:Person {name: "Vincent Ward", born: 1956})
+CREATE (Robin)-[:ACTED_IN {roles: ["Chris Nielsen"]}]->(WhatDreamsMayCome), (CubaG)-[:ACTED_IN {roles: ["Albert Lewis"]}]->(WhatDreamsMayCome), (AnnabellaS)-[:ACTED_IN {roles: ["Annie Collins-Nielsen"]}]->(WhatDreamsMayCome), (MaxS)-[:ACTED_IN {roles: ["The Tracker"]}]->(WhatDreamsMayCome), (WernerH)-[:ACTED_IN {roles: ["The Face"]}]->(WhatDreamsMayCome), (VincentW)-[:DIRECTED]->(WhatDreamsMayCome)
+CREATE (SnowFallingonCedars:Movie {title: "Snow Falling on Cedars", released: 1999, tagline: "First loves last. Forever."})
+CREATE (EthanH:Person {name: "Ethan Hawke", born: 1970})
+CREATE (RickY:Person {name: "Rick Yune", born: 1971})
+CREATE (JamesC:Person {name: "James Cromwell", born: 1940})
+CREATE (ScottH:Person {name: "Scott Hicks", born: 1953})
+CREATE (EthanH)-[:ACTED_IN {roles: ["Ishmael Chambers"]}]->(SnowFallingonCedars), (RickY)-[:ACTED_IN {roles: ["Kazuo Miyamoto"]}]->(SnowFallingonCedars), (MaxS)-[:ACTED_IN {roles: ["Nels Gudmundsson"]}]->(SnowFallingonCedars), (JamesC)-[:ACTED_IN {roles: ["Judge Fielding"]}]->(SnowFallingonCedars), (ScottH)-[:DIRECTED]->(SnowFallingonCedars)
+CREATE (YouveGotMail:Movie {title: "You've Got Mail", released: 1998, tagline: "At odds in life... in love on-line."})
+CREATE (ParkerP:Person {name: "Parker Posey", born: 1968})
+CREATE (DaveC:Person {name: "Dave Chappelle", born: 1973})
+CREATE (SteveZ:Person {name: "Steve Zahn", born: 1967})
+CREATE (TomH:Person {name: "Tom Hanks", born: 1956})
+CREATE (NoraE:Person {name: "Nora Ephron", born: 1941})
+CREATE (TomH)-[:ACTED_IN {roles: ["Joe Fox"]}]->(YouveGotMail), (MegR)-[:ACTED_IN {roles: ["Kathleen Kelly"]}]->(YouveGotMail), (GregK)-[:ACTED_IN {roles: ["Frank Navasky"]}]->(YouveGotMail), (ParkerP)-[:ACTED_IN {roles: ["Patricia Eden"]}]->(YouveGotMail), (DaveC)-[:ACTED_IN {roles: ["Kevin Jackson"]}]->(YouveGotMail), (SteveZ)-[:ACTED_IN {roles: ["George Pappas"]}]->(YouveGotMail), (NoraE)-[:DIRECTED]->(YouveGotMail)
+CREATE (SleeplessInSeattle:Movie {title: "Sleepless in Seattle", released: 1993, tagline: "What if someone you never met, someone you never saw, someone you never knew was the only someone for you?"})
+CREATE (RitaW:Person {name: "Rita Wilson", born: 1956})
+CREATE (BillPull:Person {name: "Bill Pullman", born: 1953})
+CREATE (VictorG:Person {name: "Victor Garber", born: 1949})
+CREATE (RosieO:Person {name: "Rosie O'Donnell", born: 1962})
+CREATE (TomH)-[:ACTED_IN {roles: ["Sam Baldwin"]}]->(SleeplessInSeattle), (MegR)-[:ACTED_IN {roles: ["Annie Reed"]}]->(SleeplessInSeattle), (RitaW)-[:ACTED_IN {roles: ["Suzy"]}]->(SleeplessInSeattle), (BillPull)-[:ACTED_IN {roles: ["Walter"]}]->(SleeplessInSeattle), (VictorG)-[:ACTED_IN {roles: ["Greg"]}]->(SleeplessInSeattle), (RosieO)-[:ACTED_IN {roles: ["Becky"]}]->(SleeplessInSeattle), (NoraE)-[:DIRECTED]->(SleeplessInSeattle)
+CREATE (JoeVersustheVolcano:Movie {title: "Joe Versus the Volcano", released: 1990, tagline: "A story of love, lava and burning desire."})
+CREATE (JohnS:Person {name: "John Patrick Stanley", born: 1950})
+CREATE (Nathan:Person {name: "Nathan Lane", born: 1956})
+CREATE (TomH)-[:ACTED_IN {roles: ["Joe Banks"]}]->(JoeVersustheVolcano), (MegR)-[:ACTED_IN {roles: ["DeDe", "Angelica Graynamore", "Patricia Graynamore"]}]->(JoeVersustheVolcano), (Nathan)-[:ACTED_IN {roles: ["Baw"]}]->(JoeVersustheVolcano), (JohnS)-[:DIRECTED]->(JoeVersustheVolcano)
+CREATE (WhenHarryMetSally:Movie {title: "When Harry Met Sally", released: 1998, tagline: "Can two friends sleep together and still love each other in the morning?"})
+CREATE (BillyC:Person {name: "Billy Crystal", born: 1948})
+CREATE (CarrieF:Person {name: "Carrie Fisher", born: 1956})
+CREATE (BrunoK:Person {name: "Bruno Kirby", born: 1949})
+CREATE (BillyC)-[:ACTED_IN {roles: ["Harry Burns"]}]->(WhenHarryMetSally), (MegR)-[:ACTED_IN {roles: ["Sally Albright"]}]->(WhenHarryMetSally), (CarrieF)-[:ACTED_IN {roles: ["Marie"]}]->(WhenHarryMetSally), (BrunoK)-[:ACTED_IN {roles: ["Jess"]}]->(WhenHarryMetSally), (RobR)-[:DIRECTED]->(WhenHarryMetSally), (RobR)-[:PRODUCED]->(WhenHarryMetSally), (NoraE)-[:PRODUCED]->(WhenHarryMetSally), (NoraE)-[:WROTE]->(WhenHarryMetSally)
+CREATE (ThatThingYouDo:Movie {title: "That Thing You Do", released: 1996, tagline: "In every life there comes a time when that thing you dream becomes that thing you do"})
+CREATE (LivT:Person {name: "Liv Tyler", born: 1977})
+CREATE (TomH)-[:ACTED_IN {roles: ["Mr. White"]}]->(ThatThingYouDo), (LivT)-[:ACTED_IN {roles: ["Faye Dolan"]}]->(ThatThingYouDo), (Charlize)-[:ACTED_IN {roles: ["Tina"]}]->(ThatThingYouDo), (TomH)-[:DIRECTED]->(ThatThingYouDo)
+CREATE (TheReplacements:Movie {title: "The Replacements", released: 2000, tagline: "Pain heals, Chicks dig scars... Glory lasts forever"})
+CREATE (Brooke:Person {name: "Brooke Langton", born: 1970})
+CREATE (Gene:Person {name: "Gene Hackman", born: 1930})
+CREATE (Orlando:Person {name: "Orlando Jones", born: 1968})
+CREATE (Howard:Person {name: "Howard Deutch", born: 1950})
+CREATE (Keanu)-[:ACTED_IN {roles: ["Shane Falco"]}]->(TheReplacements), (Brooke)-[:ACTED_IN {roles: ["Annabelle Farrell"]}]->(TheReplacements), (Gene)-[:ACTED_IN {roles: ["Jimmy McGinty"]}]->(TheReplacements), (Orlando)-[:ACTED_IN {roles: ["Clifford Franklin"]}]->(TheReplacements), (Howard)-[:DIRECTED]->(TheReplacements)
+CREATE (RescueDawn:Movie {title: "RescueDawn", released: 2006, tagline: "Based on the extraordinary true story of one man's fight for freedom"})
+CREATE (ChristianB:Person {name: "Christian Bale", born: 1974})
+CREATE (ZachG:Person {name: "Zach Grenier", born: 1954})
+CREATE (MarshallB)-[:ACTED_IN {roles: ["Admiral"]}]->(RescueDawn), (ChristianB)-[:ACTED_IN {roles: ["Dieter Dengler"]}]->(RescueDawn), (ZachG)-[:ACTED_IN {roles: ["Squad Leader"]}]->(RescueDawn), (SteveZ)-[:ACTED_IN {roles: ["Duane"]}]->(RescueDawn), (WernerH)-[:DIRECTED]->(RescueDawn)
+CREATE (TheBirdcage:Movie {title: "The Birdcage", released: 1996, tagline: "Come as you are"})
+CREATE (MikeN:Person {name: "Mike Nichols", born: 1931})
+CREATE (Robin)-[:ACTED_IN {roles: ["Armand Goldman"]}]->(TheBirdcage), (Nathan)-[:ACTED_IN {roles: ["Albert Goldman"]}]->(TheBirdcage), (Gene)-[:ACTED_IN {roles: ["Sen. Kevin Keeley"]}]->(TheBirdcage), (MikeN)-[:DIRECTED]->(TheBirdcage)
+CREATE (Unforgiven:Movie {title: "Unforgiven", released: 1992, tagline: "It's a hell of a thing, killing a man"})
+CREATE (RichardH:Person {name: "Richard Harris", born: 1930})
+CREATE (ClintE:Person {name: "Clint Eastwood", born: 1930})
+CREATE (RichardH)-[:ACTED_IN {roles: ["English Bob"]}]->(Unforgiven), (ClintE)-[:ACTED_IN {roles: ["Bill Munny"]}]->(Unforgiven), (Gene)-[:ACTED_IN {roles: ["Little Bill Daggett"]}]->(Unforgiven), (ClintE)-[:DIRECTED]->(Unforgiven)
+CREATE (JohnnyMnemonic:Movie {title: "Johnny Mnemonic", released: 1995, tagline: "The hottest data on earth. In the coolest head in town"})
+CREATE (Takeshi:Person {name: "Takeshi Kitano", born: 1947})
+CREATE (Dina:Person {name: "Dina Meyer", born: 1968})
+CREATE (IceT:Person {name: "Ice-T", born: 1958})
+CREATE (RobertL:Person {name: "Robert Longo", born: 1953})
+CREATE (Keanu)-[:ACTED_IN {roles: ["Johnny Mnemonic"]}]->(JohnnyMnemonic), (Takeshi)-[:ACTED_IN {roles: ["Takahashi"]}]->(JohnnyMnemonic), (Dina)-[:ACTED_IN {roles: ["Jane"]}]->(JohnnyMnemonic), (IceT)-[:ACTED_IN {roles: ["J-Bone"]}]->(JohnnyMnemonic), (RobertL)-[:DIRECTED]->(JohnnyMnemonic)
+CREATE (CloudAtlas:Movie {title: "Cloud Atlas", released: 2012, tagline: "Everything is connected"})
+CREATE (HalleB:Person {name: "Halle Berry", born: 1966})
+CREATE (JimB:Person {name: "Jim Broadbent", born: 1949})
+CREATE (TomT:Person {name: "Tom Tykwer", born: 1965})
+CREATE (DavidMitchell:Person {name: "David Mitchell", born: 1969})
+CREATE (StefanArndt:Person {name: "Stefan Arndt", born: 1961})
+CREATE (TomH)-[:ACTED_IN {roles: ["Zachry", "Dr. Henry Goose", "Isaac Sachs", "Dermot Hoggins"]}]->(CloudAtlas), (Hugo)-[:ACTED_IN {roles: ["Bill Smoke", "Haskell Moore", "Tadeusz Kesselring", "Nurse Noakes", "Boardman Mephi", "Old Georgie"]}]->(CloudAtlas), (HalleB)-[:ACTED_IN {roles: ["Luisa Rey", "Jocasta Ayrs", "Ovid", "Meronym"]}]->(CloudAtlas), (JimB)-[:ACTED_IN {roles: ["Vyvyan Ayrs", "Captain Molyneux", "Timothy Cavendish"]}]->(CloudAtlas), (TomT)-[:DIRECTED]->(CloudAtlas), (LillyW)-[:DIRECTED]->(CloudAtlas), (LanaW)-[:DIRECTED]->(CloudAtlas), (DavidMitchell)-[:WROTE]->(CloudAtlas), (StefanArndt)-[:PRODUCED]->(CloudAtlas)
+CREATE (TheDaVinciCode:Movie {title: "The Da Vinci Code", released: 2006, tagline: "Break The Codes"})
+CREATE (IanM:Person {name: "Ian McKellen", born: 1939})
+CREATE (AudreyT:Person {name: "Audrey Tautou", born: 1976})
+CREATE (PaulB:Person {name: "Paul Bettany", born: 1971})
+CREATE (RonH:Person {name: "Ron Howard", born: 1954})
+CREATE (TomH)-[:ACTED_IN {roles: ["Dr. Robert Langdon"]}]->(TheDaVinciCode), (IanM)-[:ACTED_IN {roles: ["Sir Leight Teabing"]}]->(TheDaVinciCode), (AudreyT)-[:ACTED_IN {roles: ["Sophie Neveu"]}]->(TheDaVinciCode), (PaulB)-[:ACTED_IN {roles: ["Silas"]}]->(TheDaVinciCode), (RonH)-[:DIRECTED]->(TheDaVinciCode)
+CREATE (VforVendetta:Movie {title: "V for Vendetta", released: 2006, tagline: "Freedom! Forever!"})
+CREATE (NatalieP:Person {name: "Natalie Portman", born: 1981})
+CREATE (StephenR:Person {name: "Stephen Rea", born: 1946})
+CREATE (JohnH:Person {name: "John Hurt", born: 1940})
+CREATE (BenM:Person {name: "Ben Miles", born: 1967})
+CREATE (Hugo)-[:ACTED_IN {roles: ["V"]}]->(VforVendetta), (NatalieP)-[:ACTED_IN {roles: ["Evey Hammond"]}]->(VforVendetta), (StephenR)-[:ACTED_IN {roles: ["Eric Finch"]}]->(VforVendetta), (JohnH)-[:ACTED_IN {roles: ["High Chancellor Adam Sutler"]}]->(VforVendetta), (BenM)-[:ACTED_IN {roles: ["Dascomb"]}]->(VforVendetta), (JamesM)-[:DIRECTED]->(VforVendetta), (LillyW)-[:PRODUCED]->(VforVendetta), (LanaW)-[:PRODUCED]->(VforVendetta), (JoelS)-[:PRODUCED]->(VforVendetta), (LillyW)-[:WROTE]->(VforVendetta), (LanaW)-[:WROTE]->(VforVendetta)
+CREATE (SpeedRacer:Movie {title: "Speed Racer", released: 2008, tagline: "Speed has no limits"})
+CREATE (EmileH:Person {name: "Emile Hirsch", born: 1985})
+CREATE (JohnG:Person {name: "John Goodman", born: 1960})
+CREATE (SusanS:Person {name: "Susan Sarandon", born: 1946})
+CREATE (MatthewF:Person {name: "Matthew Fox", born: 1966})
+CREATE (ChristinaR:Person {name: "Christina Ricci", born: 1980})
+CREATE (Rain:Person {name: "Rain", born: 1982})
+CREATE (EmileH)-[:ACTED_IN {roles: ["Speed Racer"]}]->(SpeedRacer), (JohnG)-[:ACTED_IN {roles: ["Pops"]}]->(SpeedRacer), (SusanS)-[:ACTED_IN {roles: ["Mom"]}]->(SpeedRacer), (MatthewF)-[:ACTED_IN {roles: ["Racer X"]}]->(SpeedRacer), (ChristinaR)-[:ACTED_IN {roles: ["Trixie"]}]->(SpeedRacer), (Rain)-[:ACTED_IN {roles: ["Taejo Togokahn"]}]->(SpeedRacer), (BenM)-[:ACTED_IN {roles: ["Cass Jones"]}]->(SpeedRacer), (LillyW)-[:DIRECTED]->(SpeedRacer), (LanaW)-[:DIRECTED]->(SpeedRacer), (LillyW)-[:WROTE]->(SpeedRacer), (LanaW)-[:WROTE]->(SpeedRacer), (JoelS)-[:PRODUCED]->(SpeedRacer)
+CREATE (NinjaAssassin:Movie {title: "Ninja Assassin", released: 2009, tagline: "Prepare to enter a secret world of assassins"})
+CREATE (NaomieH:Person {name: "Naomie Harris"})
+CREATE (Rain)-[:ACTED_IN {roles: ["Raizo"]}]->(NinjaAssassin), (NaomieH)-[:ACTED_IN {roles: ["Mika Coretti"]}]->(NinjaAssassin), (RickY)-[:ACTED_IN {roles: ["Takeshi"]}]->(NinjaAssassin), (BenM)-[:ACTED_IN {roles: ["Ryan Maslow"]}]->(NinjaAssassin), (JamesM)-[:DIRECTED]->(NinjaAssassin), (LillyW)-[:PRODUCED]->(NinjaAssassin), (LanaW)-[:PRODUCED]->(NinjaAssassin), (JoelS)-[:PRODUCED]->(NinjaAssassin)
+CREATE (TheGreenMile:Movie {title: "The Green Mile", released: 1999, tagline: "Walk a mile you'll never forget."})
+CREATE (MichaelD:Person {name: "Michael Clarke Duncan", born: 1957})
+CREATE (DavidM:Person {name: "David Morse", born: 1953})
+CREATE (SamR:Person {name: "Sam Rockwell", born: 1968})
+CREATE (GaryS:Person {name: "Gary Sinise", born: 1955})
+CREATE (PatriciaC:Person {name: "Patricia Clarkson", born: 1959})
+CREATE (FrankD:Person {name: "Frank Darabont", born: 1959})
+CREATE (TomH)-[:ACTED_IN {roles: ["Paul Edgecomb"]}]->(TheGreenMile), (MichaelD)-[:ACTED_IN {roles: ["John Coffey"]}]->(TheGreenMile), (DavidM)-[:ACTED_IN {roles: ['Brutus "Brutal" Howell']}]->(TheGreenMile), (BonnieH)-[:ACTED_IN {roles: ["Jan Edgecomb"]}]->(TheGreenMile), (JamesC)-[:ACTED_IN {roles: ["Warden Hal Moores"]}]->(TheGreenMile), (SamR)-[:ACTED_IN {roles: ['"Wild Bill" Wharton']}]->(TheGreenMile), (GaryS)-[:ACTED_IN {roles: ["Burt Hammersmith"]}]->(TheGreenMile), (PatriciaC)-[:ACTED_IN {roles: ["Melinda Moores"]}]->(TheGreenMile), (FrankD)-[:DIRECTED]->(TheGreenMile)
+CREATE (FrostNixon:Movie {title: "Frost/Nixon", released: 2008, tagline: "400 million people were waiting for the truth."})
+CREATE (FrankL:Person {name: "Frank Langella", born: 1938})
+CREATE (MichaelS:Person {name: "Michael Sheen", born: 1969})
+CREATE (OliverP:Person {name: "Oliver Platt", born: 1960})
+CREATE (FrankL)-[:ACTED_IN {roles: ["Richard Nixon"]}]->(FrostNixon), (MichaelS)-[:ACTED_IN {roles: ["David Frost"]}]->(FrostNixon), (KevinB)-[:ACTED_IN {roles: ["Jack Brennan"]}]->(FrostNixon), (OliverP)-[:ACTED_IN {roles: ["Bob Zelnick"]}]->(FrostNixon), (SamR)-[:ACTED_IN {roles: ["James Reston, Jr."]}]->(FrostNixon), (RonH)-[:DIRECTED]->(FrostNixon)
+CREATE (Hoffa:Movie {title: "Hoffa", released: 1992, tagline: "He didn't want law. He wanted justice."})
+CREATE (DannyD:Person {name: "Danny DeVito", born: 1944})
+CREATE (JohnR:Person {name: "John C. Reilly", born: 1965})
+CREATE (JackN)-[:ACTED_IN {roles: ["Hoffa"]}]->(Hoffa), (DannyD)-[:ACTED_IN {roles: ['Robert "Bobby" Ciaro']}]->(Hoffa), (JTW)-[:ACTED_IN {roles: ["Frank Fitzsimmons"]}]->(Hoffa), (JohnR)-[:ACTED_IN {roles: ['Peter "Pete" Connelly']}]->(Hoffa), (DannyD)-[:DIRECTED]->(Hoffa)
+CREATE (Apollo13:Movie {title: "Apollo 13", released: 1995, tagline: "Houston, we have a problem."})
+CREATE (EdH:Person {name: "Ed Harris", born: 1950})
+CREATE (BillPax:Person {name: "Bill Paxton", born: 1955})
+CREATE (TomH)-[:ACTED_IN {roles: ["Jim Lovell"]}]->(Apollo13), (KevinB)-[:ACTED_IN {roles: ["Jack Swigert"]}]->(Apollo13), (EdH)-[:ACTED_IN {roles: ["Gene Kranz"]}]->(Apollo13), (BillPax)-[:ACTED_IN {roles: ["Fred Haise"]}]->(Apollo13), (GaryS)-[:ACTED_IN {roles: ["Ken Mattingly"]}]->(Apollo13), (RonH)-[:DIRECTED]->(Apollo13)
+CREATE (Twister:Movie {title: "Twister", released: 1996, tagline: "Don't Breathe. Don't Look Back."})
+CREATE (PhilipH:Person {name: "Philip Seymour Hoffman", born: 1967})
+CREATE (JanB:Person {name: "Jan de Bont", born: 1943})
+CREATE (BillPax)-[:ACTED_IN {roles: ["Bill Harding"]}]->(Twister), (HelenH)-[:ACTED_IN {roles: ["Dr. Jo Harding"]}]->(Twister), (ZachG)-[:ACTED_IN {roles: ["Eddie"]}]->(Twister), (PhilipH)-[:ACTED_IN {roles: ['Dustin "Dusty" Davis']}]->(Twister), (JanB)-[:DIRECTED]->(Twister)
+CREATE (CastAway:Movie {title: "Cast Away", released: 2000, tagline: "At the edge of the world, his journey begins."})
+CREATE (RobertZ:Person {name: "Robert Zemeckis", born: 1951})
+CREATE (TomH)-[:ACTED_IN {roles: ["Chuck Noland"]}]->(CastAway), (HelenH)-[:ACTED_IN {roles: ["Kelly Frears"]}]->(CastAway), (RobertZ)-[:DIRECTED]->(CastAway)
+CREATE (OneFlewOvertheCuckoosNest:Movie {title: "One Flew Over the Cuckoo's Nest", released: 1975, tagline: "If he's crazy, what does that make you?"})
+CREATE (MilosF:Person {name: "Milos Forman", born: 1932})
+CREATE (JackN)-[:ACTED_IN {roles: ["Randle McMurphy"]}]->(OneFlewOvertheCuckoosNest), (DannyD)-[:ACTED_IN {roles: ["Martini"]}]->(OneFlewOvertheCuckoosNest), (MilosF)-[:DIRECTED]->(OneFlewOvertheCuckoosNest)
+CREATE (SomethingsGottaGive:Movie {title: "Something's Gotta Give", released: 2003})
+CREATE (DianeK:Person {name: "Diane Keaton", born: 1946})
+CREATE (NancyM:Person {name: "Nancy Meyers", born: 1949})
+CREATE (JackN)-[:ACTED_IN {roles: ["Harry Sanborn"]}]->(SomethingsGottaGive), (DianeK)-[:ACTED_IN {roles: ["Erica Barry"]}]->(SomethingsGottaGive), (Keanu)-[:ACTED_IN {roles: ["Julian Mercer"]}]->(SomethingsGottaGive), (NancyM)-[:DIRECTED]->(SomethingsGottaGive), (NancyM)-[:PRODUCED]->(SomethingsGottaGive), (NancyM)-[:WROTE]->(SomethingsGottaGive)
+CREATE (BicentennialMan:Movie {title: "Bicentennial Man", released: 1999, tagline: "One robot's 200 year journey to become an ordinary man."})
+CREATE (ChrisC:Person {name: "Chris Columbus", born: 1958})
+CREATE (Robin)-[:ACTED_IN {roles: ["Andrew Marin"]}]->(BicentennialMan), (OliverP)-[:ACTED_IN {roles: ["Rupert Burns"]}]->(BicentennialMan), (ChrisC)-[:DIRECTED]->(BicentennialMan)
+CREATE (CharlieWilsonsWar:Movie {title: "Charlie Wilson's War", released: 2007, tagline: "A stiff drink. A little mascara. A lot of nerve. Who said they couldn't bring down the Soviet empire."})
+CREATE (JuliaR:Person {name: "Julia Roberts", born: 1967})
+CREATE (TomH)-[:ACTED_IN {roles: ["Rep. Charlie Wilson"]}]->(CharlieWilsonsWar), (JuliaR)-[:ACTED_IN {roles: ["Joanne Herring"]}]->(CharlieWilsonsWar), (PhilipH)-[:ACTED_IN {roles: ["Gust Avrakotos"]}]->(CharlieWilsonsWar), (MikeN)-[:DIRECTED]->(CharlieWilsonsWar)
+CREATE (ThePolarExpress:Movie {title: "The Polar Express", released: 2004, tagline: "This Holiday Season... Believe"})
+CREATE (TomH)-[:ACTED_IN {roles: ["Hero Boy", "Father", "Conductor", "Hobo", "Scrooge", "Santa Claus"]}]->(ThePolarExpress), (RobertZ)-[:DIRECTED]->(ThePolarExpress)
+CREATE (ALeagueofTheirOwn:Movie {title: "A League of Their Own", released: 1992, tagline: "Once in a lifetime you get a chance to do something different."})
+CREATE (Madonna:Person {name: "Madonna", born: 1954})
+CREATE (GeenaD:Person {name: "Geena Davis", born: 1956})
+CREATE (LoriP:Person {name: "Lori Petty", born: 1963})
+CREATE (PennyM:Person {name: "Penny Marshall", born: 1943})
+CREATE (TomH)-[:ACTED_IN {roles: ["Jimmy Dugan"]}]->(ALeagueofTheirOwn), (GeenaD)-[:ACTED_IN {roles: ["Dottie Hinson"]}]->(ALeagueofTheirOwn), (LoriP)-[:ACTED_IN {roles: ["Kit Keller"]}]->(ALeagueofTheirOwn), (RosieO)-[:ACTED_IN {roles: ["Doris Murphy"]}]->(ALeagueofTheirOwn), (Madonna)-[:ACTED_IN {roles: ['"All the Way" Mae Mordabito']}]->(ALeagueofTheirOwn), (BillPax)-[:ACTED_IN {roles: ["Bob Hinson"]}]->(ALeagueofTheirOwn), (PennyM)-[:DIRECTED]->(ALeagueofTheirOwn)
+CREATE (PaulBlythe:Person {name: "Paul Blythe"})
+CREATE (AngelaScope:Person {name: "Angela Scope"})
+CREATE (JessicaThompson:Person {name: "Jessica Thompson"})
+CREATE (JamesThompson:Person {name: "James Thompson"})
+CREATE (JamesThompson)-[:FOLLOWS]->(JessicaThompson), (AngelaScope)-[:FOLLOWS]->(JessicaThompson), (PaulBlythe)-[:FOLLOWS]->(AngelaScope)
+CREATE (JessicaThompson)-[:REVIEWED {summary: "An amazing journey", rating: 95}]->(CloudAtlas), (JessicaThompson)-[:REVIEWED {summary: "Silly, but fun", rating: 65}]->(TheReplacements), (JamesThompson)-[:REVIEWED {summary: "The coolest football movie ever", rating: 100}]->(TheReplacements), (AngelaScope)-[:REVIEWED {summary: "Pretty funny at times", rating: 62}]->(TheReplacements), (JessicaThompson)-[:REVIEWED {summary: "Dark, but compelling", rating: 85}]->(Unforgiven), (JessicaThompson)-[:REVIEWED {summary: "Slapstick redeemed only by the Robin Williams and Gene Hackman's stellar performances", rating: 45}]->(TheBirdcage), (JessicaThompson)-[:REVIEWED {summary: "A solid romp", rating: 68}]->(TheDaVinciCode), (JamesThompson)-[:REVIEWED {summary: "Fun, but a little far fetched", rating: 65}]->(TheDaVinciCode), (JessicaThompson)-[:REVIEWED {summary: "You had me at Jerry", rating: 92}]->(JerryMaguire)
+WITH TomH AS a
+MATCH (a)-[:ACTED_IN]->(m)<-[:DIRECTED]-(d)
+RETURN a AS a, m AS m, d AS d
+  LIMIT 10
+2020-10-20 21:30:26.917+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] [system] Checkpoint triggered by "Scheduled checkpoint for every 15 minutes threshold" @ txId: 23 checkpoint started...
+2020-10-20 21:30:27.459+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] [system] Checkpoint triggered by "Scheduled checkpoint for every 15 minutes threshold" @ txId: 23 checkpoint completed in 537ms
+2020-10-20 21:30:27.462+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] [system] No log version pruned. The strategy used was '1 days'. Last checkpoint was made in log version 0.
+2020-10-20 21:31:30.173+0000 WARN [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2020-10-20 21:33:05.792+0000 WARN [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2020-10-20 21:33:23.636+0000 WARN [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2020-10-20 21:36:09.892+0000 WARN [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2020-10-20 21:37:49.912+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] [neo4j] Checkpoint triggered by "Scheduled checkpoint for every 15 minutes threshold" @ txId: 21 checkpoint started...
+2020-10-20 21:37:50.345+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] [neo4j] Checkpoint triggered by "Scheduled checkpoint for every 15 minutes threshold" @ txId: 21 checkpoint completed in 431ms
+2020-10-20 21:37:50.345+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] [neo4j] No log version pruned. The strategy used was '1 days'. Last checkpoint was made in log version 0.
+2020-10-20 21:52:50.560+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] [neo4j] Checkpoint triggered by "Scheduled checkpoint for every 15 minutes threshold" @ txId: 22 checkpoint started...
+2020-10-20 21:52:51.497+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] [neo4j] Checkpoint triggered by "Scheduled checkpoint for every 15 minutes threshold" @ txId: 22 checkpoint completed in 936ms
+2020-10-20 21:52:51.498+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] [neo4j] No log version pruned. The strategy used was '1 days'. Last checkpoint was made in log version 0.
+2020-10-20 22:01:36.681+0000 INFO [o.n.c.i.ExecutionEngine] [neo4j] Discarded stale query from the query cache after 2388 seconds. Reason: CardinalityByLabelsAndRelationshipType(None,None,None) changed from 253.0 to 1.0, which is a divergence of 0.9960474308300395 which is greater than threshold 0.4647588499353144. Query: CALL db.labels()
+  YIELD label
+RETURN {name: "labels", data: COLLECT(label)[..1000]} AS result
+UNION ALL
+CALL db.relationshipTypes()
+  YIELD relationshipType
+RETURN {name: "relationshipTypes", data: COLLECT(relationshipType)[..1000]} AS result
+UNION ALL
+CALL db.propertyKeys()
+  YIELD propertyKey
+RETURN {name: "propertyKeys", data: COLLECT(propertyKey)[..1000]} AS result
+UNION ALL
+CALL dbms.functions()
+  YIELD name, signature, description
+RETURN {name: "functions", data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures()
+  YIELD name, signature, description
+RETURN {name: "procedures", data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+MATCH ()
+RETURN {name: "nodes", data: count(*)} AS result
+UNION ALL
+MATCH ()-->()
+RETURN {name: "relationships", data: count(*)} AS result
+2020-10-20 22:07:51.753+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] [neo4j] Checkpoint triggered by "Scheduled checkpoint for every 15 minutes threshold" @ txId: 23 checkpoint started...
+2020-10-20 22:07:52.207+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] [neo4j] Checkpoint triggered by "Scheduled checkpoint for every 15 minutes threshold" @ txId: 23 checkpoint completed in 452ms
+2020-10-20 22:07:52.209+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] [neo4j] No log version pruned. The strategy used was '1 days'. Last checkpoint was made in log version 0.
+2020-10-20 22:37:31.013+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1209, gcTime=0, gcCount=0}
+2020-10-21 00:23:48.154+0000 INFO [o.n.c.i.ExecutionEngine] [neo4j] Discarded stale query from the query cache after 8541 seconds. Reason: NodesAllCardinality changed from 173.0 to 10.0, which is a divergence of 0.9421965317919075 which is greater than threshold 0.23426868570375484. Query: MATCH (a)
+DETACH DELETE a
+2020-10-21 00:44:19.877+0000 WARN [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2020-10-21 00:44:37.514+0000 INFO [o.n.c.i.ExecutionEngine] [neo4j] Discarded stale query from the query cache after 11209 seconds. Reason: NodesAllCardinality changed from 171.0 to 10.0, which is a divergence of 0.9415204678362573 which is greater than threshold 0.19281099079697347. Query: CREATE (a:Greeting)
+SET a.message = $message
+RETURN (a.message + ", from node ") + id(a) AS `a.message + ', from node ' + id(a)`
+2020-10-21 00:44:43.276+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] [neo4j] Checkpoint triggered by "Scheduled checkpoint for every 15 minutes threshold" @ txId: 24 checkpoint started...
+2020-10-21 00:44:43.711+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] [neo4j] Checkpoint triggered by "Scheduled checkpoint for every 15 minutes threshold" @ txId: 24 checkpoint completed in 433ms
+2020-10-21 00:44:43.714+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] [neo4j] No log version pruned. The strategy used was '1 days'. Last checkpoint was made in log version 0.
+2020-10-21 00:59:43.961+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] [neo4j] Checkpoint triggered by "Scheduled checkpoint for every 15 minutes threshold" @ txId: 26 checkpoint started...
+2020-10-21 00:59:44.467+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] [neo4j] Checkpoint triggered by "Scheduled checkpoint for every 15 minutes threshold" @ txId: 26 checkpoint completed in 503ms
+2020-10-21 00:59:44.470+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] [neo4j] No log version pruned. The strategy used was '1 days'. Last checkpoint was made in log version 0.
+2020-10-21 01:00:40.953+0000 INFO [o.n.c.i.ExecutionEngine] [neo4j] Discarded stale query from the query cache after 2212 seconds. Reason: NodesAllCardinality changed from 10.0 to 28.0, which is a divergence of 0.6428571428571429 which is greater than threshold 0.4782039850509271. Query: MATCH (a)
+DETACH DELETE a
+2020-10-21 01:01:44.048+0000 INFO [o.n.c.i.ExecutionEngine] [neo4j] Discarded stale query from the query cache after 14182 seconds. Reason: NodesAllCardinality changed from 10.0 to 28.0, which is a divergence of 0.6428571428571429 which is greater than threshold 0.16104394563011482. Query: CALL dbms.components()
+  YIELD name, versions, edition
+RETURN name AS name, versions AS versions, edition AS edition
+2020-10-21 01:01:44.179+0000 INFO [o.n.c.i.ExecutionEngine] [neo4j] Discarded stale query from the query cache after 10807 seconds. Reason: CardinalityByLabelsAndRelationshipType(None,None,None) changed from 1.0 to 813.0, which is a divergence of 0.998769987699877 which is greater than threshold 0.19809000137035185. Query: CALL db.labels()
+  YIELD label
+RETURN {name: "labels", data: COLLECT(label)[..1000]} AS result
+UNION ALL
+CALL db.relationshipTypes()
+  YIELD relationshipType
+RETURN {name: "relationshipTypes", data: COLLECT(relationshipType)[..1000]} AS result
+UNION ALL
+CALL db.propertyKeys()
+  YIELD propertyKey
+RETURN {name: "propertyKeys", data: COLLECT(propertyKey)[..1000]} AS result
+UNION ALL
+CALL dbms.functions()
+  YIELD name, signature, description
+RETURN {name: "functions", data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures()
+  YIELD name, signature, description
+RETURN {name: "procedures", data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+MATCH ()
+RETURN {name: "nodes", data: count(*)} AS result
+UNION ALL
+MATCH ()-->()
+RETURN {name: "relationships", data: count(*)} AS result
+2020-10-21 01:02:13.888+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=171, gcTime=0, gcCount=0}
+2020-10-21 01:03:44.463+0000 INFO [o.n.c.i.ExecutionEngine] [neo4j] Discarded stale query from the query cache after 120 seconds. Reason: CardinalityByLabelsAndRelationshipType(None,None,None) changed from 813.0 to 1.0, which is a divergence of 0.998769987699877 which is greater than threshold 0.7292929583420953. Query: CALL db.labels()
+  YIELD label
+RETURN {name: "labels", data: COLLECT(label)[..1000]} AS result
+UNION ALL
+CALL db.relationshipTypes()
+  YIELD relationshipType
+RETURN {name: "relationshipTypes", data: COLLECT(relationshipType)[..1000]} AS result
+UNION ALL
+CALL db.propertyKeys()
+  YIELD propertyKey
+RETURN {name: "propertyKeys", data: COLLECT(propertyKey)[..1000]} AS result
+UNION ALL
+CALL dbms.functions()
+  YIELD name, signature, description
+RETURN {name: "functions", data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures()
+  YIELD name, signature, description
+RETURN {name: "procedures", data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+MATCH ()
+RETURN {name: "nodes", data: count(*)} AS result
+UNION ALL
+MATCH ()-->()
+RETURN {name: "relationships", data: count(*)} AS result
+2020-10-21 01:04:45.494+0000 WARN [o.n.b.t.p.ProtocolHandshaker] Unsupported connection type: 'HTTP'. Bolt protocol only operates over a TCP connection or WebSocket.
+2020-10-21 01:04:45.499+0000 WARN [o.n.b.t.p.ProtocolHandshaker] Unsupported connection type: 'HTTP'. Bolt protocol only operates over a TCP connection or WebSocket.
+2020-10-21 01:04:45.504+0000 WARN [o.n.b.t.p.ProtocolHandshaker] Unsupported connection type: 'HTTP'. Bolt protocol only operates over a TCP connection or WebSocket.
+2020-10-21 01:04:45.509+0000 WARN [o.n.b.t.p.ProtocolHandshaker] Unsupported connection type: 'HTTP'. Bolt protocol only operates over a TCP connection or WebSocket.
+2020-10-21 01:04:45.513+0000 WARN [o.n.b.t.p.ProtocolHandshaker] Unsupported connection type: 'HTTP'. Bolt protocol only operates over a TCP connection or WebSocket.
+2020-10-21 01:04:45.516+0000 WARN [o.n.b.t.p.ProtocolHandshaker] Unsupported connection type: 'HTTP'. Bolt protocol only operates over a TCP connection or WebSocket.
+2020-10-21 01:04:45.520+0000 WARN [o.n.b.t.p.ProtocolHandshaker] Unsupported connection type: 'HTTP'. Bolt protocol only operates over a TCP connection or WebSocket.
+2020-10-21 01:04:45.523+0000 WARN [o.n.b.t.p.ProtocolHandshaker] Unsupported connection type: 'HTTP'. Bolt protocol only operates over a TCP connection or WebSocket.
+2020-10-21 01:04:45.529+0000 WARN [o.n.b.t.p.ProtocolHandshaker] Unsupported connection type: 'HTTP'. Bolt protocol only operates over a TCP connection or WebSocket.
+2020-10-21 01:04:45.533+0000 WARN [o.n.b.t.p.ProtocolHandshaker] Unsupported connection type: 'HTTP'. Bolt protocol only operates over a TCP connection or WebSocket.
+2020-10-21 01:09:05.547+0000 INFO [o.n.c.i.ExecutionEngine] [neo4j] Discarded stale query from the query cache after 320 seconds. Reason: CardinalityByLabelsAndRelationshipType(None,None,None) changed from 1.0 to 6504.0, which is a divergence of 0.9998462484624846 which is greater than threshold 0.6942961052992791. Query: CALL db.labels()
+  YIELD label
+RETURN {name: "labels", data: COLLECT(label)[..1000]} AS result
+UNION ALL
+CALL db.relationshipTypes()
+  YIELD relationshipType
+RETURN {name: "relationshipTypes", data: COLLECT(relationshipType)[..1000]} AS result
+UNION ALL
+CALL db.propertyKeys()
+  YIELD propertyKey
+RETURN {name: "propertyKeys", data: COLLECT(propertyKey)[..1000]} AS result
+UNION ALL
+CALL dbms.functions()
+  YIELD name, signature, description
+RETURN {name: "functions", data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures()
+  YIELD name, signature, description
+RETURN {name: "procedures", data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+MATCH ()
+RETURN {name: "nodes", data: count(*)} AS result
+UNION ALL
+MATCH ()-->()
+RETURN {name: "relationships", data: count(*)} AS result
+2020-10-21 01:14:44.693+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] [neo4j] Checkpoint triggered by "Scheduled checkpoint for every 15 minutes threshold" @ txId: 36 checkpoint started...
+2020-10-21 01:14:45.274+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] [neo4j] Checkpoint triggered by "Scheduled checkpoint for every 15 minutes threshold" @ txId: 36 checkpoint completed in 578ms
+2020-10-21 01:14:45.281+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] [neo4j] No log version pruned. The strategy used was '1 days'. Last checkpoint was made in log version 0.
