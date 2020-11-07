@@ -5,6 +5,9 @@
    - [Entity Recognition](#entity-recognition)
       - [Installation and setup](#installation-and-setup)
       - [Running the script](#running-the-script)
+   - [Graphing](#graphing)
+      - [Add Nodes](#add-nodes)
+      - [Add Relations](#add-relations)
 - [Contributors](#contributors)
 - [TODO](#todo)
 
@@ -12,6 +15,7 @@
 about..
 # Demo
 ![1000 Sample Nodes](media/1000_sample_nodes.jpg)
+
 # Usage Guide
 ## Entity Recognition
 ### Installation and setup
@@ -63,7 +67,9 @@ Note: the pretrained models that will be download (specified in `config.yaml`) r
 `nohup python main.py --data-dir /path/to/CORD_19_RC/ >> log_1.txt &`
 
 You can check if the script is still running by running `htop` or you can check if the script crashed because of an error by opening the log file.
-
+## Graphing
+### Add Nodes
+### Add Relations
 # Contributors:
 * Shelden Shi
 * Tony Wurt
