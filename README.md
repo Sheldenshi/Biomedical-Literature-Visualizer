@@ -1,4 +1,4 @@
-# Visualization_Analyzation_Tool_for_Biomedical_Researchers
+# Visualization-Analyzation-Tool-for-Biomedical-Researchers
 ## Contributors:
 * Shelden Shi
 * Tony Wurt
