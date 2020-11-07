@@ -17,8 +17,8 @@ about..
 ![1000 Sample Nodes](media/1000_sample_nodes.jpg)
 
 # Usage Guide
-## Entity Recognition
-### Installation and setup
+## - Entity Recognition
+### -- Installation and setup
 This repository requires Python 3.6 (other versions where not tested).
 
 1. Clone and `cd` into repository via: 
@@ -54,7 +54,7 @@ This repository requires Python 3.6 (other versions where not tested).
 
       `./download_data.sh`
 
-### Running the script
+### -- Running the script
 
 Note: the pretrained models that will be download (specified in `config.yaml`) require about 1 GB of free space.
 
@@ -67,9 +67,9 @@ Note: the pretrained models that will be download (specified in `config.yaml`) r
 `nohup python main.py --data-dir /path/to/CORD_19_RC/ >> log_1.txt &`
 
 You can check if the script is still running by running `htop` or you can check if the script crashed because of an error by opening the log file.
-## Graphing
-### Add Nodes
-### Add Relations
+## - Graphing
+### -- Add Nodes
+### -- Add Relations
 # Contributors:
 * Shelden Shi
 * Tony Wurt
