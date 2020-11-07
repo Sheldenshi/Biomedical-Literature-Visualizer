@@ -1,6 +1,6 @@
 # Visualization Analyzation Tool for Biomedical Researchers
-- [Demo](#demo)
 - [About](#about)
+- [Demo](#demo)
 - [Usage Guide](#usage-guide)
    - [Entity Recognition](#entity-recognition)
       - [Installation and setup](#installation-and-setup)
@@ -8,10 +8,10 @@
 - [Contributors](#contributors)
 - [TODO](#todo)
 
-# Demo
-demo...
 # About
 about..
+# Demo
+![1000 Sample Nodes](https://github.com/Sheldenshi/Visualization-Analyzation-Tool-for-Biomedical-Researchers/blob/main/media/1000_sample_nodes.jpg)
 # Usage Guide
 ## Entity Recognition
 ### Installation and setup
