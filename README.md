@@ -15,6 +15,7 @@
 about..
 # Demo
 ![1000 Sample Nodes](media/1000_sample_nodes.jpg)
+This is a demo graph of 1000 sample entities. Lables are on the top right corner.
 
 # Usage Guide
 ## - Entity Recognition
