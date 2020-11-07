@@ -11,7 +11,7 @@
 # About
 about..
 # Demo
-![1000 Sample Nodes](https://github.com/Sheldenshi/Visualization-Analyzation-Tool-for-Biomedical-Researchers/blob/main/media/1000_sample_nodes.jpg)
+![](https://github.com/Sheldenshi/Visualization-Analyzation-Tool-for-Biomedical-Researchers/blob/main/media/1000_sample_nodes.jpg=250x250)
 # Usage Guide
 ## Entity Recognition
 ### Installation and setup
