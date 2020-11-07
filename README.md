@@ -1,10 +1,21 @@
 # Visualization-Analyzation-Tool-for-Biomedical-Researchers
-## Contributors:
+- [Contributors](#contributors)
+- [Demo](#demo)
+- [About](#about)
+- [Usage Guide](#usage-guide)
+   - [Installation and setup](#installation-and-setup)
+   - [Running the script](#running-the-script)
+- [TODO](#todo)
+# Contributors:
 * Shelden Shi
 * Tony Wurt
 * Isabella Lee-Rubio
-### Installation and setup
-
+# Demo
+demo...
+# About
+about..
+# Usage Guide
+## Installation and setup
 This repository requires Python 3.6 (other versions where not tested).
 
 1. Clone and `cd` into repository via: 
@@ -40,7 +51,7 @@ This repository requires Python 3.6 (other versions where not tested).
 
       `./download_data.sh`
 
-### Running the script
+## Running the script
 
 Note: the pretrained models that will be download (specified in `config.yaml`) require about 1 GB of free space.
 
@@ -53,3 +64,5 @@ Note: the pretrained models that will be download (specified in `config.yaml`) r
 `nohup python main.py --data-dir /path/to/CORD_19_RC/ >> log_1.txt &`
 
 You can check if the script is still running by running `htop` or you can check if the script crashed because of an error by opening the log file.
+
+# TODO
