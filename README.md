@@ -14,11 +14,14 @@
 # About
 about..
 # Demo
+## - Overview
 ![1000 Sample Nodes](media/1000_sample_nodes.jpg)
 This is a demo graph of 1000 sample entities. Lables are on the top right corner. <br />
 Each of the circles in this graph is an annotated entity, a word with with a label. For example, {name: Covid 19, paper_id: 123456, label: Disease}. <br />
 The link between nodes repersents a connection between nodes (how often do two words appear in the same sentence).
-
+## - Relationships
+![node1](media/link_sample1.jpg)
+![node2](media/link_sample2.jpg)
 # Usage Guide
 ## - Entity Recognition
 ### -- Installation and setup
