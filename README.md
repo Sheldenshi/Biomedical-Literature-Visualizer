@@ -2,8 +2,9 @@
 - [Demo](#demo)
 - [About](#about)
 - [Usage Guide](#usage-guide)
-   - [Installation and setup](#installation-and-setup)
-   - [Running the script](#running-the-script)
+   - [Entity Recognition](#entity-recognition)
+      - [Installation and setup](#installation-and-setup)
+      - [Running the script](#running-the-script)
 - [Contributors](#contributors)
 - [TODO](#todo)
 
@@ -12,7 +13,8 @@ demo...
 # About
 about..
 # Usage Guide
-## Installation and setup
+## Entity Recognition
+### Installation and setup
 This repository requires Python 3.6 (other versions where not tested).
 
 1. Clone and `cd` into repository via: 
@@ -48,7 +50,7 @@ This repository requires Python 3.6 (other versions where not tested).
 
       `./download_data.sh`
 
-## Running the script
+### Running the script
 
 Note: the pretrained models that will be download (specified in `config.yaml`) require about 1 GB of free space.
 
@@ -67,3 +69,5 @@ You can check if the script is still running by running `htop` or you can check 
 * Tony Wurt
 * Isabella Lee-Rubio
 # TODO
+* Build a live-demo web application.
+* Pipeline the tool for easier usage.
