@@ -1,15 +1,12 @@
 # Visualization Analyzation Tool for Biomedical Researchers
-- [Contributors](#contributors)
 - [Demo](#demo)
 - [About](#about)
 - [Usage Guide](#usage-guide)
    - [Installation and setup](#installation-and-setup)
    - [Running the script](#running-the-script)
+- [Contributors](#contributors)
 - [TODO](#todo)
-# Contributors:
-* Shelden Shi
-* Tony Wurt
-* Isabella Lee-Rubio
+
 # Demo
 demo...
 # About
@@ -65,4 +62,8 @@ Note: the pretrained models that will be download (specified in `config.yaml`) r
 
 You can check if the script is still running by running `htop` or you can check if the script crashed because of an error by opening the log file.
 
+# Contributors:
+* Shelden Shi
+* Tony Wurt
+* Isabella Lee-Rubio
 # TODO
