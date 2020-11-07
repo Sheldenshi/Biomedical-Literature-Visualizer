@@ -11,7 +11,7 @@
 # About
 about..
 # Demo
-![1000 Sample Nodes](media/1000_sample_nodes.jpg){:height="500px" width="500px"}
+![1000 Sample Nodes](media/1000_sample_nodes.jpg)
 # Usage Guide
 ## Entity Recognition
 ### Installation and setup
