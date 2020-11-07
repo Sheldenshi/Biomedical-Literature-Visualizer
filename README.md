@@ -67,3 +67,5 @@ You can check if the script is still running by running `htop` or you can check 
 * Tony Wurt
 * Isabella Lee-Rubio
 # TODO
+* Build a live-demo web application.
+* Pipeline the tool for easier usage.
