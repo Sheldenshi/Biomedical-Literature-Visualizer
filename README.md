@@ -1,4 +1,4 @@
-# Visualization-Analyzation-Tool-for-Biomedical-Researchers
+# Visualization Analyzation Tool for Biomedical Researchers
 - [Contributors](#contributors)
 - [Demo](#demo)
 - [About](#about)
@@ -20,7 +20,7 @@ This repository requires Python 3.6 (other versions where not tested).
 
 1. Clone and `cd` into repository via: 
 
-   `git clone https://github.com/e-tony/CalHacksProject && cd CalHacksProject`
+   `git clone https://github.com/Sheldenshi/Visualization-Analyzation-Tool-for-Biomedical-Researchers.git && cd Visualization-Analyzation-Tool-for-Biomedical-Researchers`
 
 2. Create a virtual environment for Python via: 
 
