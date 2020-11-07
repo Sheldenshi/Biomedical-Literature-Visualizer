@@ -22,6 +22,7 @@ The link between nodes repersents a connection between nodes (how often do two w
 ## - Relationships
 ![node1](media/link_sample1.jpg)
 ![node2](media/link_sample2.jpg)
+In this example, viral RNA genome is associated to Spanish Flu Virus
 # Usage Guide
 ## - Entity Recognition
 ### -- Installation and setup
