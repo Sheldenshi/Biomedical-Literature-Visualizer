@@ -12,7 +12,9 @@
 - [TODO](#todo)
 
 # About
-Our mission is to create a tool that helps biomedical researchers process large sets of papers. Researchers read 
+1 in 15 people worldwide are suffering from a rare("orphan") disease. With few doctors knowledgeable about each rare disease, many individuals are unable to receive any diagnosis for their illness. Furthermore, for each rare disease, studies that look at things like genes associated with the disease are also often few in number. As roughly 2 million research papers are published each year, with estimates that half are unread, the common doctor would be unaware of such studies that could be of use to patients manifesting a rare disease. Our mission is to create a tool that addresses these two issues. <br />
+Currently, our solution is building a pipeline that first annotates given literatures with pre-trained NLP models from [Stanza](https://stanfordnlp.github.io/stanza/), a Python natural language analysis package developed by Stanford NLP Group. The models perform entity recognition on the texts that users wish to analyze, labeling entities(biomedical words and phrases) with labels such as DNA, Disease, Organism... With those labeled entities, our open-source tool add them to a graph database. As of now, we are using [Neo4j](https://neo4j.com/). Then it adds undirected relationships between entities that appear in the same sentence. Therefore, the more links between two entities, the stronger the connection.
+
 # Demo
 ## - Overview
 ![1000 Sample Nodes](media/1000_sample_nodes.jpg)
