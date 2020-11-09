@@ -17,6 +17,7 @@ Currently, our solution is building a pipeline that first annotates given litera
 
 # Demo
 ## - Overview
+We used [a dataset that contains 200,000 papers on Covid-19](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge) for the demo.
 ![1000 Sample Nodes](media/1000_sample_nodes.jpg)
 This is a demo graph of 1000 sample entities. Labels are in the top right corner. <br />
 Each of the circles in this graph is an annotated entity, a word with a label. For example, {name: Covid-19, label: Disease}. <br />
