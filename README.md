@@ -12,7 +12,7 @@
 - [TODO](#todo)
 
 # About
-about..
+Our mission is to create a tool that helps biomedical researchers process large sets of papers. Researchers read 
 # Demo
 ## - Overview
 ![1000 Sample Nodes](media/1000_sample_nodes.jpg)
