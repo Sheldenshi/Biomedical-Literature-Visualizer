@@ -1,4 +1,4 @@
-# Biomedical-Paper-Visualizer 
+# Biomedical Literature Visualizer 
 - [About](#about)
 - [Demo](#demo)
 - [Usage Guide](#usage-guide)
