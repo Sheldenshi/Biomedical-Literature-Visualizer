@@ -1,4 +1,4 @@
-# Visualization Analyzation Tool for Biomedical Researchers
+# Biomedical-Paper-Visualizer 
 - [About](#about)
 - [Demo](#demo)
 - [Usage Guide](#usage-guide)
