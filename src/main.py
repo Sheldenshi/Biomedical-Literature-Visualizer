@@ -7,6 +7,8 @@ python main.py --data-dir /path/to/CORD_19_RC/
 
 Usage with manually set options: 
 python main.py --config /path/to/config.yaml --data-dir /path/to/CORD_19_RC/ --bern False --stanza True --num-batches 10
+
+Author - Tornike Tsereteli
 """
 
 import os
