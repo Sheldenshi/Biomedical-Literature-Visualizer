@@ -81,7 +81,7 @@ You can check if the script is still running by running `htop` or you can check 
 ### -- Add Relations
 # Contributors:
 * Shelden Shi
-* Tony Wurt
+* Tornike Tsereteli
 * Isabella Lee-Rubio
 # TODO
 * Build a live-demo web application.
