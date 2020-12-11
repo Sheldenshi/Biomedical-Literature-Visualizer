@@ -32,7 +32,7 @@ This repository requires Python 3.6 (other versions were not tested).
 
 1. Clone and `cd` into repository via: 
 
-   `git clone https://github.com/Sheldenshi/Visualization-Analyzation-Tool-for-Biomedical-Researchers.git && cd Visualization-Analyzation-Tool-for-Biomedical-Researchers`
+   `git clone https://github.com/Sheldenshi/Biomedical-Literature-Visualizer.git && cd Biomedical-Literature-Visualizer`
 
 2. Create a virtual environment for Python via: 
 
